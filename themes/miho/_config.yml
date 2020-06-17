@@ -7,11 +7,11 @@ favicon: /favicon.ico
 # Header
 
 # Keywords of your site | 网站关键字
-keywords: MinHow,MinHow's Blog
+keywords: WuDeng,WuDeng's Blog
 # Head headline | 头部标题
-header_title: MinHow's Blog
+header_title: WuDeng's Blog
 # Head description | 头部描述
-header_description: 一个专注 WEB 开发的技术博客
+header_description: 一个码农的技术博客
 # Link to your logo | logo地址
 logo: images/logo.png
 # Link to your banner_img | 首页banner图地址
@@ -41,20 +41,16 @@ menu:
 #    target: true         Whether to jump out | 是否跳出
 social:
   home:
-    title: MinHow
-    url: //minhow.com
+    title: WuDeng
+    url: //yfzhang-nk.github.io
     target: true
   github:
     title: Github
-    url: //github.com/wongminho
+    url: //github.com/yfzhang-nk
     target: true
   weibo:
     title: Weibo
-    url: //weibo.com/WongMinHo
-    target: true
-  twitter:
-    title: Twitter
-    url: //twitter.com/huangminhow
+    url: //weibo.com/nankaihunter
     target: true
   #qq:
   #weixin:
