@@ -3,13 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blog 
+title: 五灯
 subtitle: ''
 description: ''
 keywords:
-author: WuDeng
-language: en
-timezone: ''
+author: Yifei Zhang
+language: zh-CN
+timezone: 'Asia/Shanghai'
+avatar: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -30,6 +31,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+    - README.md
+    - manifest.json
+    - CNAME
+    - rebots.txt
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -94,6 +99,10 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: volantis
+favicon: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar16.ico
+
+# 开启cdn加速cdn.jsdelivr.net
+use_cdn: true # 启用cdn后暗黑模式无法使用
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
