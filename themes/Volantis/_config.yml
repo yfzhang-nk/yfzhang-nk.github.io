@@ -100,7 +100,7 @@ cover:
     home: true
     archive: false 
     others: false # can be written in front-matter 'cover: true'
-  logo:  https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar-no-bg.png
+  logo:  https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar-no-background.png
   title: 五灯的博客 
   subtitle: '记录一个码农的学习历程'
   search: # search bar placeholder
