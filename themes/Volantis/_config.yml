@@ -59,20 +59,20 @@ style:
     logofont:
       fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Varela Round'
-      url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      url: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
     bodyfont:
       fontfamily: 'UbuntuMono, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'UbuntuMono'
-      url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      url: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
       weight: normal
       style: normal
       offset: 0.1rem # Correct baseline for zh-CN
     codefont:
       fontfamily: 'Menlo, UbuntuMono, Monaco'
       # name: 'Monaco'
-      # url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf
+      # url: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-fonts/Monaco/Monaco.ttf
       # weight: normal
       # style: normal
   # color:
@@ -105,20 +105,26 @@ cover:
   subtitle: '记录一个码农的学习历程'
   search: # search bar placeholder
   features:
-    - name: 博客
-      icon: fas fa-rss
-      url: https://volantis.js.org/archives/
-    - name: 示例
-      icon: fas fa-play-circle
-      url: https://volantis.js.org/examples/
+    - name: 分类 
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 分类
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags
+      url: tags/
+    - name: 归档
+      icon: fas fa-archive
+      url: archives/
     - name: 源码
       icon: fas fa-file-code
-      url: https://github.com/xaoxuu/hexo-theme-volantis/
+      url: https://github.com/yfzhang-nk/yfzhang-nk.github.io
       rel: external nofollow noopener noreferrer
       target: _blank
     - name: 鸣谢
       icon: fas fa-handshake
-      url: https://volantis.js.org/contributors/
+      url: contributors/
 
 
 # Navigation Bar
@@ -186,7 +192,7 @@ meta:
   title: # 暂无配置
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    avatar: https://cdn.jsdelivr.net/gh/yfzhang-nk/blogPic/myhead.png
+    avatar: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png
     name: 五灯
     url: https://yfzhang-nk.github.io
   # 文章创建日期
@@ -217,16 +223,16 @@ meta:
     icon: fas fa-hashtag
   # 分享
   share:
-    - id: qq
-      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png
-    - id: qzone
-      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png
-    - id: weibo
-      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png
-    # - id: qrcode # 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
-    #   img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/wechat.png
+    # - id: qq
+    #   img: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/qq.png
+    # - id: qzone
+    #   img: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/qzone.png
+    # - id: weibo
+    #   img: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/weibo.png
+    - id: qrcode # 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
+      img: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png
     # - id: telegram
-    #   img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/telegram.png
+    #   img: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/telegram.png
   # 链接
   btns:
     edit:
@@ -266,13 +272,13 @@ widget:
   blogger:
     class: blogger
     display: [desktop, mobile] # [desktop, mobile]
-    avatar: https://cdn.jsdelivr.net/gh/yfzhang-nk/blogPic/myhead.png
+    avatar: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png
     shape: rectangle # circle, rectangle
     url: /about/
     title:
     subtitle:
-    jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
-    social: true
+    jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
+    social: false
   # ---------------------------------------
   # toc widget (valid only in articles)
   toc:
@@ -281,7 +287,7 @@ widget:
     header:
       icon: fas fa-list
       title: 本文目录
-    list_number: false
+    list_number: true 
     min_depth: 2
     max_depth: 5
   # ---------------------------------------
@@ -328,14 +334,24 @@ widget:
       - permalink
   # ---------------------------------------
   # qrcode widget
-  donate:
+  qrcode: # 二维码手机观看
     class: qrcode
-    display: [desktop, mobile] # [desktop, mobile]
-    height: 64px  # Automatic height if not set
-    fancybox: true
+    display: [desktop] # [desktop, mobile]
+    header:
+      icon: fas fa-mobile
+      title: 手机观看
+    height: #64px  # Automatic height if not set
+    fancybox: #true
     images:
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+      - https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/github.io.png
+  # donate:
+  #   class: qrcode
+  #   display: [desktop, mobile] # [desktop, mobile]
+  #   height: 64px  # Automatic height if not set
+  #   fancybox: true
+  #   images:
+  #     - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+  #     - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
   # ---------------------------------------
   # references widget
   references:
@@ -358,17 +374,15 @@ widget:
 
 footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, info, copyright]
+  layout: [social, info, copyright]
   social:
-    - icon: fas fa-rss
-      url: atom.xml
+    # - icon: fas fa-rss
+    #   url: atom.xml
     - icon: fas fa-envelope
-      url: mailto:me@xaoxuu.com
+      url: mailto:nankaihunter@gmail.com
     - icon: fab fa-github
-      url: https://github.com/xaoxuu
-    - icon: fas fa-headphones-alt
-      url: https://music.163.com/#/user/home?id=63035382
-  copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
+      url: https://github.com/yfzhang-nk
+  copyright: '[Copyright © 2017-2020 Yifei Zhang](https://yfzhang-nk.github.io)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 
@@ -392,7 +406,7 @@ seo:
 plugins:
   ######## Plugins to improve loading speed:
   # Preload (The menu's url must end with ‘/’)
-  instant_page: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/instant_page.js
+  instant_page: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-volantis@2/js/instant_page.js
 
   ######## Plugins to optimize the experience:
   # highlight.js
@@ -400,6 +414,11 @@ plugins:
     js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
     css: https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/solarized-light.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
+
+  # Picture Zoom
+  fancybox:
+    css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
+    js: https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
@@ -412,12 +431,15 @@ plugins:
   # Codeblock Copy Button
   clipboard: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
 
+  # mathjax
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
   ######## Plugins for SEO:
   # Traffic statistics (very slow loading)
-  busuanzi: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  busuanzi: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
 
   # npm i --save hexo-wordcount
-  wordcount: #true
+  wordcount: true
 
   ######## Plugins for ...
   # Button Ripple Effect
@@ -426,18 +448,19 @@ plugins:
     js: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js
 
   # Typing Effects
-  comment_typing: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/comment_typing.js
+  comment_typing: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-volantis@2/js/comment_typing.js
 
   # Slide Background
   backstretch:
     enable: true
     js: https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
-    shuffle: true         # shuffle playlist
+    shuffle: false # shuffle playlist
     duration: 20000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
+        - https://cdn.jsdelivr.net/gh/yfzhang-nk/blogPic/background.jpeg
+      # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
       # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg
       # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
       # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/35F12181-F0E9-45BD-B134-37E4B4A660CF.jpeg
@@ -474,10 +497,10 @@ plugins:
   # Artitalk https://artitalk.js.org
   # 配置过程请参考：https://artitalk.js.org/doc.html
   # 除appID和appKEY外均为选填项
-  Artitalk:
-    enable: false # true为开启，false为关闭
-    appID: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
-    appKEY: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
+  #  Artitalk:
+  #    enable: false # true为开启，false为关闭
+  #    appID: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
+  #    appKEY: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
     # severurl:  #leancloud绑定的安全域名，使用国际版的话不需要填写
     # slanguage: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
     # per: #每页说说的显示数量
@@ -589,7 +612,7 @@ comments:
 search:
   enable: true
   service: hexo  # hexo, google, algolia, azure, baidu
-  js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.5/js/search.js
+  js: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-volantis@2.6.5/js/search.js
   google:
     apiKey:
     engineId:
@@ -608,9 +631,9 @@ search:
 
 ############################### Theme Information ###############################
 info:
-  name: Volantis # This is theme's name.
+  name: 五灯的博客 # This is theme's name.
   version: '2.6.6' # This is theme's version.
   docs: https://volantis.js.org/ # This is theme's URL.
   cdn:
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.5/js/app.js
-    css:
+    js: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-volantis@2.6.5/js/app.js
+    css: https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-volantis@2.6.5/css/style.css
