@@ -1,38 +1,27 @@
 ---
-title: Hello World
+title: 博客开篇
+tags:
+	- 生活
+categories:
+	- 随笔
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+Hexo博客第一篇，说说自己为什么要写博客，博客写什么东西，以及之后的计划。
+<!-- more -->
+## {% span blue, 开篇 %}
+一晃都码农十年了，期间在外企打过工、在民企写过代码、创过业、当过外包老板，现在在某大公司安安稳稳的过着995生活。养孩子和供房子，加上疫情和经济大环境不好，没了折腾的动力和能力，索性安安稳稳中积累自己的能力，通过博客记录自己的学习过程，也作为一个输出的阵地，顺带提高下写作功力。
 
-### Create a new post
+## {% span blue, 写点啥 %}
+{% p left logo h4 green, 技术学习 %}
+虽然作为一个老码农，仍然还是有很多技术盲区，之后的学习不能局限于阅读，会通过博文内化为信手拈来的东西。当然还会有一部分是对英文内容的翻译（不是纯翻译，会改变为自己的语言)。
+{% p left logo h4 green, 非技术知识 %}
+一个人的知识结构应该像一架飞机，机身为自身专业能力，需要深入，飞机的机翼也是必不可少的，知识架构上代表了知识广度，这几年由于参加CPA考试，学习了很多财务分析知识；跟随得到也听了很多非常不错的经济、金融、管理的课程（还有些杂七杂八的内容）。看完听过之后，也会在博客上进行输出。 
+{% p left logo h4 green, 记录 %}
+* 个人随笔，记录点感悟和日记；
+* 儿童编程教育，我对其发展比较看好，因此会记录些自己的调研结果和想法；
+* 如果可能，做些自己感兴趣的影视分析，热点评论。
 
-``` bash
-$ hexo new "My New Post"
-```
+## {% span blue, 咋计划 %}
+2020年还会花费更多的时间去进行CPA备考，先计划“翻译翻译”《97 things every programmer should know》，随后不追求每月必须有多少篇，但是只要觉得有用我就会记录下来。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+{% p left logo h4, 奔着卓越努力！%}
