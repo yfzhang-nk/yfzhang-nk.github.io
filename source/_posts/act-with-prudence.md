@@ -5,7 +5,7 @@ tags:
 	- 程序员修养
 	- 程序员应该知道的97件事
 categories:
-	- 翻译
+	- 英文文章翻译
 ---
 
 {% p logo, "Whatever you undertake, act with prudence and consider the consequences" Anon %}
