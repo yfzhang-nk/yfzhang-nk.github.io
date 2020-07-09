@@ -19,4 +19,4 @@ categories:
 
 以下为我的文章链接:
 {% post_link act-with-prudence %}
-{% post_link apply_functional_programming_principles %}
+{% post_link apply-functional-programming-principles %}
