@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,8 +16,12 @@
 
   <!-- 页面元数据 -->
   
-    <title>标签：程序员修养 - 五灯</title>
+    <title>应用函数式编程原则 - 五灯</title>
   
+    <meta name="keywords" content="程序员应该知道的97件事">
+  
+  
+    <meta name="description" content="函数式编程最近又受到主流程序员社区的喜欢，函数式编程的原则都有哪些，为什么会受到推崇。">
   
 
   <!-- feed -->
@@ -299,27 +301,12 @@
     <div class='body-wrapper'>
       
 
-
 <div class='l_main'>
   
-    
-      
-  <section class="post-list ">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
+
   
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -329,11 +316,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/ckcd1q803000704xf0ca6gryg/">
-      每个程序员应该知道的97件事
+  <h1 class="title">
+    <a href="/2020/ckcem520n0000sexfg12x5tc0/">
+      应用函数式编程原则
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -369,27 +356,9 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月8日</p>
+    <p>发布于：2020年7月9日</p>
   </a>
 </div>
-
-            
-          
-            
-              
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：256字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1分钟</p>
-    </a>
-  </div>
-
 
             
           
@@ -407,175 +376,65 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p>
-<p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p>
-<ol>
-<li>Algorithm：每周至少做一道算法题；</li>
-<li>Review：阅读并点评至少一篇英文技术文章；</li>
-<li>Tip：学习至少一个技术技巧；</li>
-<li>Share：分享一篇有观点和思考的技术文章。</li>
-</ol>
-<p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p>
-<p>以下为我的文章链接:</p>
-<a href="/2020/ckcctc3y7000004xfdqwd7aar/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a>
-
-      
-    </div>
-    
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
-  
-
-
-  <section class='meta'>
-    
-      
-      
-      <div class="meta" id="header-meta">
-        
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
           
-  <h2 class="title">
-    <a href="/2020/ckcctc3y7000004xfdqwd7aar/">
-      程序员应该知道的97件事-1 三思而行
-    </a>
-  </h2>
+          <p>函数式编程最近又受到主流程序员社区的喜欢，函数式编程的原则都有哪些，为什么会受到推崇。</p>
+<a id="more"></a>
+<p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/" title="" target="">Apply Functional Programming Principles</a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>应用函数式编程原则</span></h2><p>函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。</p>
+<p>掌握函数式编程可以极大地提高你在其他上下文上写代码的质量。如果你能深入理解和应用函数范式，你的设计会拥有很高的引用透明性。</p>
+<p>引用透明性是一个很好的特性：表示一个函数针对相同的输入，始终产生相同的结果，而不管是在什么地方和什么时候调用。也就是说，函数的求值很少依赖（理想中是完全不依赖）可变状态的副作用。</p>
+<p>命令式代码的主要缺陷来自可变的变量。读到这里的每个程序员都有这样的经历：在某个特殊情况下某些值不是期望的。可见性语义可以帮助我们减少这类问题，至少可以缩小范围，但真正的罪魁祸首是程序设计中滥用了变量。</p>
+<p>在这个方面，我们确实没有从中获取太多帮助。面向对象默认使用这样的设计，因为他们经常展示由多个相关且长生命周期的对象图表组成的示例，美其名曰赋值方法，这样做其实是很危险的。但是，通过巧妙的测试驱动开发的设计，特别是确保“模拟职责，而不是对象”，可以消除不必要的可变性。</p>
+<p>最终结果应该是这样一个设计：创建众多小函数，每个函数拥有自己的职责分配，按照输入的参数输出结果，而不是引用可变的成员变量。这样做产生的缺陷少，此外它们还容易调试，因为很容易定位该设计引入的标志值，比通过特定的上下文推断错误的赋值要好。这将大幅度增加引用透明性，想让这种意识深入骨髓，没有比学习函数式编程更好的办法了，因为这个在函数式编程中是作为标准出现的。</p>
+<p>当然，这个方法不是在所有场景下都是最优的。比如，在面向对象系统中，这种风格在领域模型开发（例：打破商业规则的复杂度）上比用户界面开发更能产出更好的结果</p>
+<p>掌握了函数式编程范式，你将更明智的把本章内容应用到其他领域。你的对象系统与引用透明性更能产生共鸣，跟函数式对等方式的接近程度超乎你的想象。实际上，有人断言函数式编程和面向对象编程是相互映射的两端，是计算机领域里的阴阳两极。</p>
+<p>By <a href="https://www.linkedin.com/in/egarson/" title="" target="">Edward Garson</a></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>be attributed to</span>  归因于…<br><span class='p green'>culprit</span>  n. 犯人，罪犯<br><span class='p green'>act on</span>  对…起作用；按照…行事<br><span class='p green'>rogue value</span> 维基百科上显示为sentinel value的别名，表示标记值</p>
+</blockquote>
 
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>函数式编程的特性我还没有深入的理解，此时不置评论。不过我相信，函数式编程有很好的特性，但软件工程上没有银弹，任何的设计都有适用的范围，使用前先深入了解它。</p>
 
-        
-        <div class='new-meta-box'>
           
-            
-          
-            
+            <div class='article_footer'>
               
-<div class='new-meta-item author'>
-  <a href="https://yfzhang-nk.github.io" rel="nofollow">
-    <img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png">
-    <p>五灯</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/' rel="nofollow">
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>英文文章翻译</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月8日</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：898字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：3分钟</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              
-
-            
-          
-        </div>
-        
-          <hr>
-        
-      </div>
-    
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class='p logo'>Whatever you undertake</p>
-<p>开启对「97 Things Every Programmer Should Know」的翻译，今天是第一篇「Act with Prudence」</p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/ckcctc3y7000004xfdqwd7aar/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
-
-
-    
-  
-</div>
-<aside class='l_side'>
-  
+                
   
     
     
 
-<section class="widget blogger shadow desktop mobile">
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png'/>
-        </a>
-      
-    
-    
+      <blockquote>
+        
+          
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckcem520n0000sexfg12x5tc0/>http://yfzhang-nk.github.io/2020/ckcem520n0000sexfg12x5tc0/</a></p>
+          
+        
+      </blockquote>
     
   </div>
 </section>
@@ -583,61 +442,132 @@
   
 
   
-    
-    
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-09T17:54:11+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年7月9日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
   
-
-  <section class="widget category shadow desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>程序员应该知道的97件事</p></a></div>
 
 
-    <div class='content'>
-      <ul class="entry navigation">
         
-          <li><a class="flat-box"
-            title="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/"
-            id="categoriesE88BB1E69687E69687E7ABA0E7BFBBE8AF91"
-            ><div class='name'>英文文章翻译</div><div class='badge'>(2)</div></a></li>
+      
         
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
-            id="categoriesE99A8FE7AC94"
-            ><div class='name'>随笔</div><div class='badge'>(1)</div></a></li>
+          
+
         
-      </ul>
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        
+        <div class='hoverbox'>
+          <a><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADqElEQVR42u3aS1YcQQwEwLn/pe0T9ENKaUAMUTub/lRFs8in5PXPitYLAThw4MBZ4MAdgXuFq/yih+ur/z+97um+9LzgwIEDBw4cOHDX4KYQTxurAlQ/0NNz0/u75wUHDhw4cODAgbsK92UADINnFbi6j63g3T4vOHDgwIEDBw7ch8F1B4nbA8ztAA0OHDhw4MCBA/dX4LoBN31/eh04cODAgQMHDtynw7UL2mYB/a5BYzUIn2nywYEDBw4cOHDgluC6qxswr/07Pi84cODAgQMHDtwRuOnaGiRWB5VpIF47Lzhw4MCBAwcO3BG46WBwWiR3n9N97tb5wIEDBw4cOHDgrsGlG+5uqHtdWox3C/B2MAcHDhw4cODAgfslcN1BYTo4rL4vvW86EAUHDhw4cODAgbsOt3WgNMimsOnzqucHBw4cOHDgwIG7Ble9IS2e3w2YFtHdgSw4cODAgQMHDtxVuO2COB1glv/Ab1hIpwU2OHDgwIEDBw7cNbju4DItptMiu/tB20XzdJAJDhw4cODAgQP3zXBbxW76B4Hp9d2gO/1g4MCBAwcOHDhw1+G6L+4W2dNAOx2Edv8wERw4cODAgQMH7ipcGmCnQTk9WHrdFAwcOHDgwIEDB+4aXBo00+L41VzpoPJtxTU4cODAgQMHDtwRuDgIhoDpB0gHqusFNzhw4MCBAwcO3DG4aYGbDhJT4OnzqgPO9gQYHDhw4MCBAwfum+C2AuPWgDEtwrv7XiukwYEDBw4cOHDgjsBVB4rpwPGnP9C4AAcHDhw4cODAgTsClw70poG1WwSn16W/EODAgQMHDhw4cNfh0hdtbXwacNOAng40wYEDBw4cOHDgrsClxXE6IJy+Jw3eaQH9WEiDAwcOHDhw4MAdgdsuoFOQaiBOC/H0FwAcOHDgwIEDB+46XDzgG240Dbzbg8sv3wcOHDhw4MCBA3ccbgo4Lbq79717gQMHDhw4cODAXYPbGjRWB59bz0mL6LRIBwcOHDhw4MCBuwY3DYTbQbU78JwG9PbgExw4cODAgQMH7hhcWiCng9D0w2wX3t3nggMHDhw4cODAXYVrB8JmMO0G3xRgu4gGBw4cOHDgwIH7dLgUrFtEp0F8HODBgQMHDhw4cOD+CFz1Pd3AOw3M1fvBgQMHDhw4cOB+C9zWhrpBtzqY3CrMu/sABw4cOHDgwIG7CpcWtenPp8VwCj0+Dzhw4MCBAwcO3BE4qzngRAAOHDhwFjhwP7v+Az6HfNNjHcmGAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
   </section>
 
 
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/ckcd1q803000704xf0ca6gryg/'>
+                <p class='title'>每个程序员应该知道的97件事<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。
+首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：
+
+Alg...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
   
 
   
-    
-    
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
   
 
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
 
 
-    <div class='content'>
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BF%AE%E5%85%BB/" style="font-size: 24px; color: #555">程序员修养</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" style="font-size: 24px; color: #555">程序员应该知道的97件事</a>
-    </div>
-  </section>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
 
 
+
+  <script>
+    window.subData = {
+      title: '应用函数式编程原则',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
   
-
   
     
     
@@ -660,6 +590,29 @@
     
   </div>
 </section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">应用函数式编程原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.</span> <span class="toc-text">单词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">3.</span> <span class="toc-text">个人观点</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -820,6 +773,60 @@
 
 
 
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick','mail','link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function(item){
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+  var valine = new Valine();
+  function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  valine.init({
+    el: '#valine_container',
+    meta: meta,
+    
+    appId: "xjiHUtNNxiA4xHyXGtSP9u7T-gzGzoHsz",
+    appKey: "sIBtzDhiru6wLy5O0eIvPXaF",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'robohash',
+    lang:'zh-cn',
+    visitor: 'true',
+    highlight: 'true',
+    mathJax: 'false',
+    enableQQ: 'true',
+    requiredFields: requiredFields,
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+    emojiMaps: emojiMaps
+  })
+  </script>
 
 
 
