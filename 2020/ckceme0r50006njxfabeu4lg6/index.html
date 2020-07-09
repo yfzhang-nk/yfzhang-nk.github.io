@@ -16,12 +16,12 @@
 
   <!-- 页面元数据 -->
   
-    <title>博客开篇 - 五灯</title>
+    <title>程序员应该知道的97件事-2 应用函数式编程原则 - 五灯</title>
   
-    <meta name="keywords" content="生活">
+    <meta name="keywords" content="程序员应该知道的97件事">
   
   
-    <meta name="description" content="Hexo博客第一篇，说说自己为什么要写博客，博客写什么东西，以及之后的计划。">
+    <meta name="description" content="函数式编程最近又受到主流程序员社区的喜欢，函数式编程的原则都有哪些，为什么会受到推崇。">
   
 
   <!-- feed -->
@@ -317,8 +317,8 @@
         
           
   <h1 class="title">
-    <a href="/2020/ckcbpr3wo0001xoxf4ehz6gv5/">
-      博客开篇
+    <a href="/2020/ckceme0r50006njxfabeu4lg6/">
+      程序员应该知道的97件事-2 应用函数式编程原则
     </a>
   </h1>
 
@@ -343,9 +343,9 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E9%9A%8F%E7%AC%94/' rel="nofollow">
+    <a href='/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>随笔</p>
+      <p>英文文章翻译</p>
     </a>
   </div>
 
@@ -356,7 +356,7 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月7日</p>
+    <p>发布于：2020年7月9日</p>
   </a>
 </div>
 
@@ -379,21 +379,22 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           
-          <p>Hexo博客第一篇，说说自己为什么要写博客，博客写什么东西，以及之后的计划。</p>
+          <p>函数式编程最近又受到主流程序员社区的喜欢，函数式编程的原则都有哪些，为什么会受到推崇。</p>
 <a id="more"></a>
-<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>开篇</span></h2><p>一晃都码农十年了，期间在外企打过工、在民企写过代码、创过业、当过外包老板，现在在某大公司安安稳稳的过着995生活。养孩子和供房子，加上疫情和经济大环境不好，没了折腾的动力和能力，索性安安稳稳中积累自己的能力，通过博客记录自己的学习过程，也作为一个输出的阵地，顺带提高下写作功力。</p>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>写点啥</span></h2><p class='p left logo h4 green'>技术学习</p>
-<p>虽然作为一个老码农，仍然还是有很多技术盲区，之后的学习不能局限于阅读，会通过博文内化为信手拈来的东西。当然还会有一部分是对英文内容的翻译（不是纯翻译，会改变为自己的语言)。</p>
-<p class='p left logo h4 green'>非技术知识</p>
-<p>一个人的知识结构应该像一架飞机，机身为自身专业能力，需要深入，飞机的机翼也是必不可少的，知识架构上代表了知识广度，这几年由于参加CPA考试，学习了很多财务分析知识；跟随得到也听了很多非常不错的经济、金融、管理的课程（还有些杂七杂八的内容）。看完听过之后，也会在博客上进行输出。 </p>
-<p class='p left logo h4 green'>记录</p>
-<ul>
-<li>个人随笔，记录点感悟和日记；</li>
-<li>儿童编程教育，我对其发展比较看好，因此会记录些自己的调研结果和想法；</li>
-<li>如果可能，做些自己感兴趣的影视分析，热点评论。</li>
-</ul>
-<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>咋计划</span></h2><p>2020年还会花费更多的时间去进行CPA备考，先计划“翻译翻译”《97 things every programmer should know》，随后不追求每月必须有多少篇，但是只要觉得有用我就会记录下来。</p>
-<p class='p left logo h4'>奔着卓越努力！</p>
+<p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/" title="" target="">Apply Functional Programming Principles</a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>应用函数式编程原则</span></h2><p>函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。</p>
+<p>掌握函数式编程可以极大地提高你在其他上下文上写代码的质量。如果你能深入理解和应用函数范式，你的设计会拥有很高的引用透明性。</p>
+<p>引用透明性是一个很好的特性：表示一个函数针对相同的输入，始终产生相同的结果，而不管是在什么地方和什么时候调用。也就是说，函数的求值很少依赖（理想中是完全不依赖）可变状态的副作用。</p>
+<p>命令式代码的主要缺陷来自可变的变量。读到这里的每个程序员都有这样的经历：在某个特殊情况下某些值不是期望的。可见性语义可以帮助我们减少这类问题，至少可以缩小范围，但真正的罪魁祸首是程序设计中滥用了变量。</p>
+<p>在这个方面，我们确实没有从中获取太多帮助。面向对象默认使用这样的设计，因为他们经常展示由多个相关且长生命周期的对象图表组成的示例，美其名曰赋值方法，这样做其实是很危险的。但是，通过巧妙的测试驱动开发的设计，特别是确保“模拟职责，而不是对象”，可以消除不必要的可变性。</p>
+<p>最终结果应该是这样一个设计：创建众多小函数，每个函数拥有自己的职责分配，按照输入的参数输出结果，而不是引用可变的成员变量。这样做产生的缺陷少，此外它们还容易调试，因为很容易定位该设计引入的标志值，比通过特定的上下文推断错误的赋值要好。这将大幅度增加引用透明性，想让这种意识深入骨髓，没有比学习函数式编程更好的办法了，因为这个在函数式编程中是作为标准出现的。</p>
+<p>当然，这个方法不是在所有场景下都是最优的。比如，在面向对象系统中，这种风格在领域模型开发（例：打破商业规则的复杂度）上比用户界面开发更能产出更好的结果</p>
+<p>掌握了函数式编程范式，你将更明智的把本章内容应用到其他领域。你的对象系统与引用透明性更能产生共鸣，跟函数式对等方式的接近程度超乎你的想象。实际上，有人断言函数式编程和面向对象编程是相互映射的两端，是计算机领域里的阴阳两极。</p>
+<p>By <a href="https://www.linkedin.com/in/egarson/" title="" target="">Edward Garson</a></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>be attributed to</span>  归因于…<br><span class='p green'>culprit</span>  n. 犯人，罪犯<br><span class='p green'>act on</span>  对…起作用；按照…行事<br><span class='p green'>rogue value</span> 维基百科上显示为sentinel value的别名，表示标记值</p>
+</blockquote>
+
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>函数式编程的特性我还没有深入的理解，此时不置评论。不过我相信，函数式编程有很好的特性，但软件工程上没有银弹，任何的设计都有适用的范围，使用前先深入了解它。</p>
 
           
             <div class='article_footer'>
@@ -430,7 +431,7 @@
           
         
           
-            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckcbpr3wo0001xoxf4ehz6gv5/>http://yfzhang-nk.github.io/2020/ckcbpr3wo0001xoxf4ehz6gv5/</a></p>
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckceme0r50006njxfabeu4lg6/>http://yfzhang-nk.github.io/2020/ckceme0r50006njxfabeu4lg6/</a></p>
           
         
       </blockquote>
@@ -455,10 +456,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-07T17:31:51+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-09T17:58:13+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年7月7日</p>
+    <p>更新于：2020年7月9日</p>
   </a>
 </div>
 
@@ -467,7 +468,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%94%9F%E6%B4%BB/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>生活</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>程序员应该知道的97件事</p></a></div>
 
 
         
@@ -487,7 +488,7 @@
         <div class='hoverbox'>
           <a><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADmklEQVR42u3aQXYiMQwEUO5/6cwJeG2V5EEk37skTbf9YVFR8fqxovVCAA4cOHAWOHBL4F7hKj/wzeurP1eve9pH9bzgwIEDBw4cOHDb4KoA1d9PvUHvwI4P3jwvOHDgwIEDBw7cVrjqg28F1m7wru7/+Hpw4MCBAwcOHLhfDtcOmkMBOH09OHDgwIEDBw7cX4e7FXy7UODAgQMHDhw4cL8NLg2qpxu4FVC/rskHBw4cOHDgwIEbgquutKDe8nN8XnDgwIEDBw4cuCVw3TUFPn3ftBh/PC84cODAgQMHDtwSuO5g8NZ9quDVgF7dFzhw4MCBAwcO3Da4J4CpgWC1wE6L8anXv3UABw4cOHDgwIFbAncc/IYOfHr/0/2lwbf6wQAHDhw4cODAgdsK1z3wrb+nQGmgf7wOHDhw4MCBAwduOVy1MO4G4hSwG4CrX0wEBw4cOHDgwIHbAjc9gKwWxfEX/MLndIM5OHDgwIEDBw7cNrg0GHYPnl7fDcrtQSY4cODAgQMHDtyH4bo37IKeAlbBpgM6OHDgwIEDBw7cVrgpkPR+aWF9a7/gwIEDBw4cOHDb4Z4GhVPBuApx67puYQ0OHDhw4MCBA7cFrgo1PVCsBuPpgH36AQAHDhw4cODAgdsGVw2Kt4Ju94uBKUz5AwAOHDhw4MCBA7cErhoUbxfUp/s6vW/63LcO4MCBAwcOHDhwy+CqD0gHoenrpwvpp9e3C2lw4MCBAwcOHLgPw3UHmOXCNwRLi+jyBwMcOHDgwIEDB24JXLXITQvdtPCe3mc74IMDBw4cOHDgwC2DOw2k6XVTg81qAZ7uGxw4cODAgQMHbjtcOoisBtO0eO4G6+4H4riQBgcOHDhw4MCBWw6XFsjTB+wW0tXgDQ4cOHDgwIEDtx1uakB4WhxXB5ztQWT3eeDAgQMHDhw4cEvh0oPdCsinB7u9wIEDBw4cOHDgtsF1Vxp8uwX2rQHq4xsJDhw4cODAgQO3BK4bCKsDx9OB5NQgtPuGPP7nAA4cOHDgwIED92G4NPBWAboDze5+06IbHDhw4MCBAwduO1w5EDYDbzro/F8FNThw4MCBAwcO3F+D6wbdamE8FXTjQSY4cODAgQMHDtyXwk0XwOlAdHqgCg4cOHDgwIED9y1w6YaqINX7pAPPbsENDhw4cODAgQO3HS4tatMAe6uwTp8fB2Bw4MCBAwcOHLgPwVnFQScCcODAgbPAgfvs+gfp0AAm75aZ0gAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADpElEQVR42u3aQXLjMAwEQP3/08l9q1wmBpADeZu3OLIkNi9TGF8/VrQuBODAgQNngQO3BO4K17/ff/mg8Pp333t1n1ffH9svOHDgwIEDBw7cMrjjAFjc+CnAu+vTg6u+/9uDBwcOHDhw4MCBWwqXvmgaWLvBtA1RPWhw4MCBAwcOHLgvgTvdwNQgsvreUwEcHDhw4MCBAwfuW+G6wTcN2NMHDw4cOHDgwIED91S4qUFgNyinA9Pu9R9r8sGBAwcOHDhw4Ibg0gL4qX/H+wUHDhw4cODAgVsC112nxXI1+Fa/Xw3a8X7BgQMHDhw4cOCWwE39gK+6odNBZQrSDbrtCTA4cODAgQMHDtzNcKcvXt1gOlg8hZ4GPv4cHDhw4MCBAwfuIXDdQvoUKA2y1feoHiA4cODAgQMHDtxWuE/9gLBbJFcPKL3/2+vAgQMHDhw4cOCWwKUDxyp4GqzT51Vhju8PDhw4cODAgQO3DG66oL4LeHpgWr4eHDhw4MCBAwduGVx3gNktmqsDyu7gsxrIwYEDBw4cOHDgtsGlxfLpg9Ji+fR500EXHDhw4MCBAwfuKXDpi3YHlN0fAk7Bl2HBgQMHDhw4cOCWwE0Fy+6gsjtQTYN5XEiDAwcOHDhw4MA9BK4aOKcAqwPR6YAODhw4cODAgQP3FLipAWT1/tUNd98jHaCCAwcOHDhw4MBtgesGytNBYzeAdgP0VMENDhw4cODAgQO3BS4tftOAmxbPdxfSx5+DAwcOHDhw4MAtgUsDbBemusFuYD8FHhtkggMHDhw4cODAfRiuGjTjINksoKvQ4MCBAwcOHDhw/wtcWiBPFc/dQeVtg1Vw4MCBAwcOHLglcGkQTAvkqWL5Cle7wAYHDhw4cODAgVsC1x30pUG4CtQtpKuBGRw4cODAgQMH7mlwaaBNA3N1gJnep3tfcODAgQMHDhy4bXDpxruFdDX4ThXc6YAUHDhw4MCBAwduG1x3VR+cBu3pwjs9EHDgwIEDBw4cuC1wV7imoNJBZ/qcLjg4cODAgQMHDtw2uDTwpi/YfW63AI8HueDAgQMHDhw4cEvh0qI4DbjVYjsdtN7W5IMDBw4cOHDgwD0Ubrqgrl53+v+xQSg4cODAgQMHDtyXwX262E6vqxbhtw0ywYEDBw4cOHDghuGmCunqwXRXGeDwAMGBAwcOHDhw4LbD3R1cU/j0gLsD0ONCGhw4cODAgQMH7o/grOIBIAAHDhw4Cxy4v12/5eeEW+6whuIAAAAASUVORK5CYII=">
           </div>
         </div>
       
@@ -507,14 +508,14 @@
         
           <div class="prev-next">
             
-              <a class='prev' href='/2020/ckcctc3y7000004xfdqwd7aar/'>
-                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>程序员应该知道的97件事-1 三思而行</p>
-                <p class='content'>Whatever you undertake
-开启对「97 Things Every Programmer Should Know」的翻译，今天是第一篇「Act with Prudence」
-
-...</p>
-              </a>
             
+              <a class='next' href='/2020/ckceme0qt0000njxf7ug6aojn/'>
+                <p class='title'>每个程序员应该知道的97件事<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。
+首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：
+
+Alg...</p>
+              </a>
             
           </div>
         
@@ -558,7 +559,7 @@
 
   <script>
     window.subData = {
-      title: '博客开篇',
+      title: '程序员应该知道的97件事-2 应用函数式编程原则',
       tools: true
     }
   </script>
@@ -608,7 +609,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">开篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.</span> <span class="toc-text">写点啥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">3.</span> <span class="toc-text">咋计划</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">应用函数式编程原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.</span> <span class="toc-text">单词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">3.</span> <span class="toc-text">个人观点</span></a></li></ol>
     </div>
   </section>
 
