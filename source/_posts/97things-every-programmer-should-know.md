@@ -2,7 +2,6 @@
 title: 每个程序员应该知道的97件事
 date: 2020-07-08 15:33:53
 tags:
-	- 程序员修养
 	- 程序员应该知道的97件事
 categories:
 	- 英文文章翻译 
@@ -20,3 +19,4 @@ categories:
 
 以下为我的文章链接:
 {% post_link act-with-prudence %}
+{% post_link apply_functional_programming_principles %}
