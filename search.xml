@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>程序员应该知道的97件事-3 想想用户会怎么做</title>
+      <link href="/2020/ckcfwsxmd0000toxf8pbubn7a/"/>
+      <url>/2020/ckcfwsxmd0000toxf8pbubn7a/</url>
+      
+        <content type="html"><![CDATA[<p>获取用户的需求，不要去问他们要什么，而是去观察他们，这样才能了解用户最真实的需求。</p><a id="more"></a><p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_03/" title="" target="">Ask What Would the User Do? (You Are not the User)</a></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>问问“用户会怎么做”</span></h2><p>我们倾向于假设其他人和我们思考方式一样，但是他们不会。心理学家称这个现象叫做虚假同感偏差。当人们思考或者行事跟我们不一样时，我们潜意识上很容易在某种程度会给他们打上缺陷的标签。</p><p>这种偏见解释了程序员们为什么很难把自己放到用户的位置上，用户也不会像程序员一样想问题。首先，他们很少花时间使用电脑。他们不知道也不关心电脑如何工作。这就意味着程序员们解决问题时采用了一些习以为常的技术，用户们却不会使用。在页面接口上，用户不会识别出图示和线索，尽管这些是程序员们经常使用的。</p><p>找出用户是如何思考的最好办法就是观察他们。要求用户使用你开发的软件，完成一项任务。确保这是一个真正的任务：“加总一列数据”，“计算你上个月的收支”。避免太详细的任务，比如，请选择这些电子表格单元格，在下面输入一个求和公式，这个任务给了很大暗示。让用户说说他的操作流程。不要打断或者试图帮助他。要不停思考“他/她为什么这么做”。</p><p>你会注意到用户做的这些事情的核心都是类似的。他们试图采用相同的顺序完成任务，并且在相同的地方犯一样的错误。你就应该设计这个核心操作了。这个不同于设计会议，因为在那样的会议上，人们更倾向于听到“如果用户想…该怎么办？”。这会导致复杂的功能并不是用户想要的。观察他们减少这种问题。</p><p>你会碰到用户被卡住的情况，当你卡住时，你会到处看看；当用户被卡住时，他们只会缩小他们的关注点。对于他们来说在屏幕的其他地方看到解决方案就变得更困难。这就是为什么帮助文字对于用户交互设计是一个不好的解决方法。如果你必须添加指示或者说明文档，保证把它们放在对的地方，比如靠近会出现问题的区域。正因为用户有限的注意力，工具栏提示会比帮助文档有用的多。</p><p>用户往往会蒙混过关。他们找到一个有效的方法他们就会坚持这么用下去，而不管这个方法多复杂。所以最好给用户提供一个真正明显的方法，而不是提供两三捷径。你还会发现用户说他们想要的，和他们真正想要的之间存在差异。令人担忧的是收集用户需求的通用方法是问他们。这也是为什么说获取用户需求最好的办法是观察他们。花一小时观察用户比猜测用户想要什么能获取更多的信息。</p><p>By <a href="https://book.douban.com/subject/5394309/" title="" target="">Giles Colborne</a></p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>for a start</span>  首先；作为开始<br><span class='p green'>get stuck</span>  v. 受骗；被卡在…；被堵…<br><span class='p green'>muddle through</span>  终于应付过去；混过去<br><span class='p green'>stick with</span>  坚持；继续做；保持联系<br><span class='p green'>convoluted</span> adj. 复杂的；费解的；旋绕的  </p></blockquote><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>“Users tend to muddle through”，这点我深有体会，曾经就有用户告诉我们，不这样做，他们也会有其他办法实现想要的功能，只是会复杂一些，用户并不是笨，只是懒，懒的去发现你设计的捷径，只要有一个方法能实现自己的要求，就可以了，没有必要花时间去找到更多方法。相反，用户使用了复杂的方法后，反而会抱怨我们太笨，为什么不那样设计，要绕这么大一个弯子。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英文文章翻译 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序员应该知道的97件事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>程序员应该知道的97件事-2 应用函数式编程原则</title>
       <link href="/2020/ckceme0r50006njxfabeu4lg6/"/>
       <url>/2020/ckceme0r50006njxfabeu4lg6/</url>
@@ -33,7 +58,7 @@
       <link href="/2020/ckceme0qt0000njxf7ug6aojn/"/>
       <url>/2020/ckceme0qt0000njxf7ug6aojn/</url>
       
-        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a>]]></content>
+        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br>]]></content>
       
       
       <categories>
@@ -58,7 +83,7 @@
       <link href="/2020/ckceme0r70008njxfdt10euqe/"/>
       <url>/2020/ckceme0r70008njxfdt10euqe/</url>
       
-        <content type="html"><![CDATA[<p class='p logo'>Whatever you undertake</p><p>开启对「97 Things Every Programmer Should Know」的翻译，今天是第一篇「Act with Prudence」</p><a id="more"></a><p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_01/" title="" target="">Act with Prudence</a></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>三思而行</span></h2><blockquote><p>不管你做什么，都应该三思而行且考虑后果</p><footer><strong>阿农</strong></footer></blockquote><p>在一次迭代的开始，不管日程表规划的多么舒服，有些时候都无法避免的面临压力。当面对“好好做”还是“快快做”的选择时，我们经常倾向于选择“快快做”，并告诉自己我之后会回来修复它。当对自己、团队以及客户做出这样承诺时，我们是认真的。但时常下一次迭代带来了新的问题，我们必须聚焦在新问题上。这种延迟的工作被称作“技术债务”，它是程序员的天敌。Martin Fowler把这种有意的技术债务收录到自己的技术债务分类中，以区分非主动的技术债务。</p><p>技术债务类似贷款：你短期内能从中获取收益，但在还清前不得不付利息给它。代码中走捷径会让它很难增加新功能或者进行重构。这是缺陷和脆弱测试案例的滋生源泉。留它越久，就会越糟糕。当着手解决最开始的那个问题时，摆在面前的是一系列“不太好的”设计导致了代码很难重构或者纠正问题。实际上，只有事情发展到不得不解决它时，我们才会回去修复问题。到那时经常修复问题变得很困难，以至于我们没有办法承担时间成本和风险。</p><p>大多数的技术债务来源于我们面临最后期限或者是非常简单的小需求。除非情况要求你必须这样，否则别让自己陷入这种境地。<span class='p red'>但是你一定要记录它，并且尽快回来修复掉</span>，否则你的情况很快变坏。只要你做了这种妥协的决定，就一定写下一个任务卡记录到你的追踪系统里，确定自己不会忘记。</p><p>要想损失最小，最好在下次迭代中规划修复工作。如果保留技术债务可以给你带来收益，那也要让这个收益的成本可见。这会在强调技术债务的商业价值时，将修复工作放在合适的优先级上。计算和追踪保留技术债务的收益需要具体项目具体分析，但是一定要记录下来。</p><p>尽快还清技术债务，否则是不明智的。</p><p>By <a href="https://www.linkedin.com/in/sebrose/" title="" target="">Seb Rose</a></p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>on the understanding that</span>  如果；在…条件下<br><span class='p green'>all too often</span>  时常，经常是<br><span class='p green'>breeding grounds</span>  滋生地<br><span class='p green'>get around to</span>  抽时间出来做…；开始考虑做…<br><span class='p green'>accrue</span>  v. 产生；自然增长或利益增加；积累<br><span class='p green'>imprudent</span> adj. 轻率的，鲁莽的；不明智的</p></blockquote><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>技术债务是程序员无法逃避的问题，作者提到了这种有意为之的技术债务，来自于迭代的时间紧迫，或者功能简单，所以采用了不是最优的，但是能够快速实验的解决方案。在国内（不确定国外有没有)还有一个可能是这个人要离职（或者是离开项目）不会考虑后续维护之类的事情，留下了粗糙的代码。因此接手项目或者管理手下时，注意这样的情况，自身也尽量避免成为这样糟糕的程序员。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>Whatever you undertake, act with prudence and consider the consequences</p><footer><strong>Anon</strong></footer></blockquote><p>开启对「97 Things Every Programmer Should Know」的翻译，今天是第一篇「Act with Prudence」</p><a id="more"></a><p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_01/" title="" target="">Act with Prudence</a></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>三思而行</span></h2><blockquote><p>不管你做什么，都应该三思而行且考虑后果</p><footer><strong>阿农</strong></footer></blockquote><p>在一次迭代的开始，不管日程表规划的多么舒服，有些时候都无法避免的面临压力。当面对“好好做”还是“快快做”的选择时，我们经常倾向于选择“快快做”，并告诉自己我之后会回来修复它。当对自己、团队以及客户做出这样承诺时，我们是认真的。但时常下一次迭代带来了新的问题，我们必须聚焦在新问题上。这种延迟的工作被称作“技术债务”，它是程序员的天敌。Martin Fowler把这种有意的技术债务收录到自己的技术债务分类中，以区分非主动的技术债务。</p><p>技术债务类似贷款：你短期内能从中获取收益，但在还清前不得不付利息给它。代码中走捷径会让它很难增加新功能或者进行重构。这是缺陷和脆弱测试案例的滋生源泉。留它越久，就会越糟糕。当着手解决最开始的那个问题时，摆在面前的是一系列“不太好的”设计导致了代码很难重构或者纠正问题。实际上，只有事情发展到不得不解决它时，我们才会回去修复问题。到那时经常修复问题变得很困难，以至于我们没有办法承担时间成本和风险。</p><p>大多数的技术债务来源于我们面临最后期限或者是非常简单的小需求。除非情况要求你必须这样，否则别让自己陷入这种境地。<span class='p red'>但是你一定要记录它，并且尽快回来修复掉</span>，否则你的情况很快变坏。只要你做了这种妥协的决定，就一定写下一个任务卡记录到你的追踪系统里，确定自己不会忘记。</p><p>要想损失最小，最好在下次迭代中规划修复工作。如果保留技术债务可以给你带来收益，那也要让这个收益的成本可见。这会在强调技术债务的商业价值时，将修复工作放在合适的优先级上。计算和追踪保留技术债务的收益需要具体项目具体分析，但是一定要记录下来。</p><p>尽快还清技术债务，否则是不明智的。</p><p>By <a href="https://www.linkedin.com/in/sebrose/" title="" target="">Seb Rose</a></p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>on the understanding that</span>  如果；在…条件下<br><span class='p green'>all too often</span>  时常，经常是<br><span class='p green'>breeding grounds</span>  滋生地<br><span class='p green'>get around to</span>  抽时间出来做…；开始考虑做…<br><span class='p green'>accrue</span>  v. 产生；自然增长或利益增加；积累<br><span class='p green'>imprudent</span> adj. 轻率的，鲁莽的；不明智的</p></blockquote><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>技术债务是程序员无法逃避的问题，作者提到了这种有意为之的技术债务，来自于迭代的时间紧迫，或者功能简单，所以采用了不是最优的，但是能够快速实验的解决方案。在国内（不确定国外有没有)还有一个可能是这个人要离职（或者是离开项目）不会考虑后续维护之类的事情，留下了粗糙的代码。因此接手项目或者管理手下时，注意这样的情况，自身也尽量避免成为这样糟糕的程序员。</p>]]></content>
       
       
       <categories>
