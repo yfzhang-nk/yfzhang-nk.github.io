@@ -7,7 +7,9 @@ categories:
 	- 英文文章翻译
 ---
 
-{% p logo, "Whatever you undertake, act with prudence and consider the consequences" Anon %}
+{% blockquote Anon %}
+Whatever you undertake, act with prudence and consider the consequences
+{% endblockquote %}
 开启对「97 Things Every Programmer Should Know」的翻译，今天是第一篇「Act with Prudence」
 
 <!-- more -->
