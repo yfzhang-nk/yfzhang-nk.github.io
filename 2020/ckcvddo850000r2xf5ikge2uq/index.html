@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,8 +16,17 @@
 
   <!-- 页面元数据 -->
   
-    <title>分类：随笔 - 五灯</title>
+    <title>程序员应该知道的97件事-4 自动化你的编码标准 - 五灯</title>
   
+    <meta name="keywords" content="程序员应该知道的97件事">
+  
+  
+    <meta name="description" content="自动化你的代码规范，在任何地方都尽可能的强制执行，比如：
+
+保证你的代码规范检查是构建过程中的一环，以此可以让每个人都能在编译的时候自动的运行一遍规范检查。
+用静态代码分析工具去扫描一遍代码中非预期的反模式。一旦发现终止构建。
+学习如何配置这些工具，以便你可以定制你自己的扫描策略。
+不要只测量代码测试覆盖率，还要...">
   
 
   <!-- feed -->
@@ -299,25 +306,12 @@
     <div class='body-wrapper'>
       
 
-
 <div class='l_main'>
   
-    
-      
-  <section class="post-list ">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
+
   
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -327,11 +321,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/ckceme0r8000anjxfggylgltw/">
-      博客开篇
+  <h1 class="title">
+    <a href="/2020/ckcvddo850000r2xf5ikge2uq/">
+      程序员应该知道的97件事-4 自动化你的编码标准
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -354,9 +348,9 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E9%9A%8F%E7%AC%94/' rel="nofollow">
+    <a href='/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>随笔</p>
+      <p>英文文章翻译</p>
     </a>
   </div>
 
@@ -367,27 +361,9 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月7日</p>
+    <p>发布于：2020年7月16日</p>
   </a>
 </div>
-
-            
-          
-            
-              
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：500字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1分钟</p>
-    </a>
-  </div>
-
 
             
           
@@ -405,58 +381,76 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hexo博客第一篇，说说自己为什么要写博客，博客写什么东西，以及之后的计划。</p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/ckceme0r8000anjxfggylgltw/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <p>自动化你的代码规范，在任何地方都尽可能的强制执行，比如：</p>
+<ul>
+<li>保证你的代码规范检查是构建过程中的一环，以此可以让每个人都能在编译的时候自动的运行一遍规范检查。</li>
+<li>用静态代码分析工具去扫描一遍代码中非预期的反模式。一旦发现终止构建。</li>
+<li>学习如何配置这些工具，以便你可以定制你自己的扫描策略。</li>
+<li>不要只测量代码测试覆盖率，还要自动化的检查结果。同样的，一旦发现测试覆盖率过低，就终止构建。</li>
+</ul>
+<a id="more"></a>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
+<p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_04/" title="" target="">Automate Your Coding Standard</a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>自动化你的编码规范</span></h2><p>你可能有过这样的经历，项目一开始时，每个人都有很多想法-我们称为新项目决议。这些决议经常会记录到文档里。关于代码的决议最终会称为项目的代码规范。在启动会议上，开发负责人会浏览文档，最好的情况，每个人都同意会尝试遵守它。然而，一旦项目开始，这些好的想法都会一个一个被抛弃。当最终交付项目时，代码看起来一团糟，没有人知道怎么变成这样的。</p>
+<p>是什么时候变糟的？大概在启动会议时，项目成员有些不太在意，其他人没有理解这点，更糟糕的，有些人根本就不同意这些规范，可能已经开始计划不服从这些规范。最后，有些人抓住了重点而且也同意，但是当项目压力过高时，他们不得不放任不管规范了。格式良好的代码并不会在客户那里获得加分，他们只是想要更多功能。而且加入代码规范不是自动化的，遵守它是一项很无聊的任务。尝试下缩进一个排版混乱的类，你就能明白自动化的好处了。</p>
+<p>既然有这些问题，我们为什么还要一开始就制定编码规范呢？使用统一的代码规范的一个原因是，可以避免某些人通过使用自己的编码风格“独占”一段代码。我们想要阻止开发者使用反模式，以此避免一些常见Bug。总之，代码规范能够使在项目中工作变的轻松，从头到尾都可以保持开发速度。达到这个效果的前提是每个人都遵守它，否则就没有用了，比如有的人使用三个空格缩进，另一些人用四个缩进。</p>
+<p>有很丰富的工具被用来生成代码质量报告或者是文档化维护代码规范，但这都不能全面解决问题。一定要把它自动化，在任何地方尽可能的强制执行。以下有一些示例：</p>
+<ul>
+<li>保证你的代码规范检查是构建过程中的一环，以此可以让每个人都能在编译的时候自动的运行一遍规范检查。</li>
+<li>用静态代码分析工具去扫描一遍代码中非预期的反模式。一旦发现终止构建。</li>
+<li>学习如何配置这些工具，以便你可以定制你自己的扫描策略。</li>
+<li>不要只测量代码测试覆盖率，还要自动化的检查结果。同样的，一旦发现测试覆盖率过低，就终止构建。</li>
+</ul>
+<p>尽量自动化所有你认为重要的地方。你不可能把所有你关心的点都自动化起来。有一些地方你无法做到标记或修复的，把它们写到一个指导手册里，作为代码规范自动化的补充，但是你要接受这个事实：你的同事可能不会那么严格遵守手册中的内容。</p>
+<p>最后，代码规范应该是动态的而不是静态的。随着项目的演进，项目需求会变，一开始看起来很聪明的做法，几个月后就看起来没有那么必要了。</p>
+<p>By <a href="https://github.com/filipvanlaenen" title="" target="">Filip van Laenen</a></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>quite often</span> 经常<br><span class='p green'>get underway</span>  开始、启程<br><span class='p green'>in all</span>  总之<br><span class='p green'>diligently</span> 勤奋的，勤勉的</p>
+</blockquote>
 
-  
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>除了代码规范应该自动化外，其他东西也可以学习自动化的方式。比如公司的价值观，个人的思维模式（或者行为准则）。大脑需要慢系统才能完成的事情，借助自动化这个外脑，在快系统中就能够得出正确决定。</p>
 
-
-    
-  
-
-</div>
-<aside class='l_side'>
-  
+          
+            <div class='article_footer'>
+              
+                
   
     
     
 
-<section class="widget blogger shadow desktop mobile">
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png'/>
-        </a>
-      
-    
-    
+      <blockquote>
+        
+          
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckcvddo850000r2xf5ikge2uq/>http://yfzhang-nk.github.io/2020/ckcvddo850000r2xf5ikge2uq/</a></p>
+          
+        
+      </blockquote>
     
   </div>
 </section>
@@ -464,61 +458,131 @@
   
 
   
-    
-    
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-21T11:19:21+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年7月21日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
   
-
-  <section class="widget category shadow desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>程序员应该知道的97件事</p></a></div>
 
 
-    <div class='content'>
-      <ul class="entry navigation">
         
-          <li><a class="flat-box"
-            title="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/"
-            id="categoriesE88BB1E69687E69687E7ABA0E7BFBBE8AF91"
-            ><div class='name'>英文文章翻译</div><div class='badge'>(5)</div></a></li>
+      
         
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
-            id="categoriesE99A8FE7AC94"
-            ><div class='name'>随笔</div><div class='badge'>(1)</div></a></li>
+          
+
         
-      </ul>
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        
+        <div class='hoverbox'>
+          <a><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADoUlEQVR42u3aQXLjMAwEQP//05sHbKlMDKAIjpu3dUUy2cxhgtnXPytaLwTgwIEDZ4EDtwTuFa7/Xlh87t17pn4u3eflvsGBAwcOHDhw4JbBHQfAQ7jq+6oXNH1hp+cFBw4cOHDgwIHbClf94nfPdwNu90JSeHDgwIEDBw4cuG+BqwbT0+e7ARgcOHDgwIEDBw5cFoDfBdf0+S4UOHDgwIEDBw7cX4MrF7TDhXB6sI9r8sGBAwcOHDhw4IbgqqsaMLf9Oz4vOHDgwIEDBw7cErjumhoonr43DcRj5wUHDhw4cODAgVsC1x0MVgeS3Ys4LajvOh84cODAgQMHDtwWuNMNVDd6d1Ctglafv3wOHDhw4MCBAwduKVwK2h0YngJPXWA1KIMDBw4cOHDgwG2FSwvlNPB2B5zVfU0FaHDgwIEDBw4cuO1w3WDZDZrVwjoOtEV4cODAgQMHDhy4bXDdwWP14N33VYN09+fBgQMHDhw4cOC2wp2+qDugTAea3aB8+yATHDhw4MCBAwfuYbjqBqvFcjrQTAN2deAJDhw4cODAgQP3KXDThXP1Qu4agE4X5uDAgQMHDhw4cFvhqgG2W/yODxhvCs6XhTQ4cODAgQMHDtzDcGmgnIKrfk81sKfF9eXn4MCBAwcOHDhwS+DS4Dtd9E5f4FSBDg4cOHDgwIEDtx2uGlTTAFwthrtBOP3ey/OBAwcOHDhw4MAth6sGzO5/EEwD8l3Fd9zkgwMHDhw4cODA/RJcdePpgaqfp++vBvVy0AYHDhw4cODAgVsClw4w0wA5dUFpsQ0OHDhw4MCBA/dX4E7BuoVut9Du7mfqFwAcOHDgwIEDB24L3FSQTYNr9f3Tz5f3DQ4cOHDgwIED9yFw3QFnWjRXLzYtpqvFNjhw4MCBAwcO3Ha4dOCYFsPpIHRqcHn8OThw4MCBAwcO3FK4uzY0FYC7RXW7wAYHDhw4cODAgVsC113dQeLUgdLCurpvcODAgQMHDhy4LXDdwDg9gLyrsB4L9uDAgQMHDhw4cMvgqoE3LXTj4HkYaE/BbyukwYEDBw4cOHDgHoJLi+dTmBSiO5AcK6zBgQMHDhw4cOC+BK5aKJ8+lw5C06AODhw4cODAgQP3rXBdwOpKB57rAjA4cODAgQMHDtxNhfQpaFo8pwPPdFAZB2Bw4MCBAwcOHLiH4OKCtnnAU+gqWHVAevwHADhw4MCBAwcO3BI4qzggRQAOHDhwFjhwz64fk0l9xHhaNnYAAAAASUVORK5CYII=">
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
   </section>
 
 
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/ckcfwsxmd0000toxf8pbubn7a/'>
+                <p class='title'>程序员应该知道的97件事-3 想想用户会怎么做<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>获取用户的需求，不要去问他们要什么，而是去观察他们，这样才能了解用户最真实的需求。
+
+原文链接：Ask What Would the User Do? (You Are not the User...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
   
 
   
-    
-    
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
   
 
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
 
 
-    <div class='content'>
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" style="font-size: 24px; color: #555">程序员应该知道的97件事</a>
-    </div>
-  </section>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
 
 
+
+  <script>
+    window.subData = {
+      title: '程序员应该知道的97件事-4 自动化你的编码标准',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
   
-
   
     
     
@@ -541,6 +605,29 @@
     
   </div>
 </section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">自动化你的编码规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.</span> <span class="toc-text">单词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">3.</span> <span class="toc-text">个人观点</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -701,6 +788,60 @@
 
 
 
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick','mail','link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function(item){
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+  var valine = new Valine();
+  function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  valine.init({
+    el: '#valine_container',
+    meta: meta,
+    
+    appId: "xjiHUtNNxiA4xHyXGtSP9u7T-gzGzoHsz",
+    appKey: "sIBtzDhiru6wLy5O0eIvPXaF",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'robohash',
+    lang:'zh-cn',
+    visitor: 'true',
+    highlight: 'true',
+    mathJax: 'false',
+    enableQQ: 'true',
+    requiredFields: requiredFields,
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+    emojiMaps: emojiMaps
+  })
+  </script>
 
 
 
