@@ -21,3 +21,4 @@ categories:
 {% post_link act-with-prudence %} <br>
 {% post_link apply-functional-programming-principles %} <br>
 {% post_link ask-what-would-the-user-do %} <br>
+{% post_link automate-your-coding-standard %} <br>
