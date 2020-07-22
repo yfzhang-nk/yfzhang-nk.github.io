@@ -6,13 +6,6 @@ tags:
 categories:
 	- 英文文章翻译
 ---
-
-{% blockquote Anon %}
-Whatever you undertake, act with prudence and consider the consequences
-{% endblockquote %}
-开启对「97 Things Every Programmer Should Know」的翻译，今天是第一篇「Act with Prudence」
-
-<!-- more -->
 原文链接：{% link Act with Prudence https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_01/  %}
 
 ## {% span blue, 三思而行 %}
@@ -22,6 +15,8 @@ Whatever you undertake, act with prudence and consider the consequences
 {% endblockquote %}
 
 在一次迭代的开始，不管日程表规划的多么舒服，有些时候都无法避免的面临压力。当面对“好好做”还是“快快做”的选择时，我们经常倾向于选择“快快做”，并告诉自己我之后会回来修复它。当对自己、团队以及客户做出这样承诺时，我们是认真的。但时常下一次迭代带来了新的问题，我们必须聚焦在新问题上。这种延迟的工作被称作“技术债务”，它是程序员的天敌。Martin Fowler把这种有意的技术债务收录到自己的技术债务分类中，以区分非主动的技术债务。
+
+<!-- more -->
 
 技术债务类似贷款：你短期内能从中获取收益，但在还清前不得不付利息给它。代码中走捷径会让它很难增加新功能或者进行重构。这是缺陷和脆弱测试案例的滋生源泉。留它越久，就会越糟糕。当着手解决最开始的那个问题时，摆在面前的是一系列“不太好的”设计导致了代码很难重构或者纠正问题。实际上，只有事情发展到不得不解决它时，我们才会回去修复问题。到那时经常修复问题变得很困难，以至于我们没有办法承担时间成本和风险。
 
