@@ -24,3 +24,4 @@ categories:
 {% post_link ask-what-would-the-user-do %} <br>
 {% post_link automate-your-coding-standard %} <br>
 {% post_link beauty-is-in-simple %} <br>
+{% post_link before-you-refactor %} <br>
