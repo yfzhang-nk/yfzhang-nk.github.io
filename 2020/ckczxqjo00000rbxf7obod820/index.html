@@ -16,16 +16,15 @@
 
   <!-- 页面元数据 -->
   
-    <title>程序员应该知道的97件事-5 美在简单之中 - 五灯</title>
+    <title>程序员应该知道的97件事-6 重构之前 - 五灯</title>
   
     <meta name="keywords" content="程序员应该知道的97件事">
   
   
-    <meta name="description" content="原文链接：Beauty Is in Simplicity
-美在简单之中有一句格言是所有软件开发者应该知道并且牢记于心的：
-风格、和谐、优雅、节奏之美取决于简单。
-柏拉图
-一言以蔽之，这句话概括出了软件开发者渴求的价值所在。">
+    <meta name="description" content="原文链接：Before You Refactor
+重构之前某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：
+
+重构最好的方法应该从观察已有的代码库和相关测试案例。这会帮助你了解当前代码的优点和缺点，以保证能保留已有的优点和避免错误。我们都认为我们会...">
   
 
   <!-- feed -->
@@ -321,8 +320,8 @@
         
           
   <h1 class="title">
-    <a href="/2020/ckcx1gc2s0000ydxfhksgh8qk/">
-      程序员应该知道的97件事-5 美在简单之中
+    <a href="/2020/ckczxqjo00000rbxf7obod820/">
+      程序员应该知道的97件事-6 重构之前
     </a>
   </h1>
 
@@ -360,7 +359,7 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月21日</p>
+    <p>发布于：2020年7月23日</p>
   </a>
 </div>
 
@@ -383,26 +382,26 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           
-          <p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_05/" title="" target="">Beauty Is in Simplicity</a></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>美在简单之中</span></h2><p>有一句格言是所有软件开发者应该知道并且牢记于心的：</p>
-<blockquote><p>风格、和谐、优雅、节奏之美取决于简单。</p>
-<footer><strong>柏拉图</strong></footer></blockquote>
-<p>一言以蔽之，这句话概括出了软件开发者渴求的价值所在。</p>
-<a id="more"></a>
-
-<p>对于代码，我们有很多追求的东西：</p>
+          <p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/" title="" target="">Before You Refactor</a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>重构之前</span></h2><p>某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：</p>
 <ul>
-<li>可读性</li>
-<li>可维护性</li>
-<li>开发速度</li>
-<li>美感<br>柏拉图想告诉我们实现这些品质的因素是简单。</li>
+<li><p>重构最好的方法应该从观察已有的代码库和相关测试案例。这会帮助你了解当前代码的优点和缺点，以保证能保留已有的优点和避免错误。我们都认为我们会比现有系统做的好…直到完成，发现我们有些事比以前做的并不比以前好，甚至更糟，因为我们没有从之前的错误中吸取教训。</p>
+<a id="more"></a></li>
+<li><p>避免重写所有的诱惑。最好重用尽量多的旧代码。不管代码多丑，但只要是被测试过和评审过的代码就可以重用。丢弃旧代码-尤其是已经上线的-意味着你丢弃了数月的测试和久经考验的代码，里面可能有很多背景和你不知道的缺陷修复。如果你不考虑这些，你写出来的代码就会出现很多难解的问题，而这些问题其实已经在旧代码中被修复了。这会浪费很多时间、精力和多年来获得的知识。</p>
+</li>
+<li><p>多次增量修改好于一次重大调整。增量调整可以让我们容易从反馈中（比如测试）获取对系统的影响。一次修改后出现上百个测试失败，肯定是不好的，这会导致我们感到挫折和压力，从而做出错误决定。一次两三个测试失败是容易处理的，提供更可管理性的方法。</p>
+</li>
+<li><p>每次迭代结束，保证现有测试案例通过是很重要的。如果现有测试不能充分覆盖你的变动，就要新增测试案例。没有经过应有的考虑就不要轻易抛弃旧代码的测试案例。表面上看其中一些测试可能并不适用新的设计，但是它们很值得深挖其中特殊测试案例存在的原因。</p>
+</li>
+<li><p>抛去个人喜好和自我。如果没有问题，为什么要去修复它？代码风格和结构不满足我们的喜好，不是一个好的重构理由。同样，你认为会比上一个程序员做的更好，这也不是一个好的理由。</p>
+</li>
+<li><p>追求新技术也不是重构的充分条件。最糟糕的重构原因就是当前代码已经远远落后今天最酷炫的技术，而且我们认为最新的语言和框架能做更多高级的事情。除非成本收益分析说明新语言或框架能够在功能性、维护性和创造性上产生重要提升，否则保持现状就好。</p>
+</li>
+<li><p>记住人总是会犯错的。重构永远不能保证新代码更好，或者和原来一样好。我曾经看到过，也经历过不少失败的重构。人非圣贤孰能无过。</p>
+</li>
 </ul>
-<p>什么是漂亮的代码？这是一个非常主观的问题。正像很多观念认知取决于我们的背景一样，美的感知也极大的依赖于我们的背景。学习艺术的人和学习科学的人对美有不同的视角（至少有这个倾向）。艺术专业的人更倾向于通过比较软件和艺术工作来寻找美感，科学专业的人更强调谈论对称和黄金比例，试图把事情简化为公式。以我的经验来看，简洁性是双方论证的基石。</p>
-<p>想想你学习过的源代码。如果你还没有读过别人的代码，立刻停止读这篇文章，找一些开源的代码学习学习。真的，我是认真的！去网上搜索哪些知名专家写的代码，只要是你熟悉的语言就行。</p>
-<p>你回来了？好的，我们说到哪了？哦，是的…我发现那些能引起我共鸣的、我认为漂亮的代码都有很多共性。其中最主要的就是简洁性。我发现应用或者系统不管有多复杂，每个独立部分都保持着简洁性。这些简单的对象都拥有相似的简洁性：单一职责、方法高内聚、方法命名自描述。有人认为5-10行一个短方法有点极端，甚至有些语言特性使得方法很难几行内实现功能。尽管如此，这样的简洁性应该是我们追求的目标。</p>
-<p>漂亮代码的底线是简单。每个独立的部分都应该保持简单：拥有简单的职责，与系统其他部分保持简单的关联。通过干净整洁、可测试的代码，在系统的整个生命周期内保持高效的开发速度，这才是让我们的系统能够承受住时间考验的方法。美来源于简单，并因简单被人们发现。</p>
-<p>By <a href="https://www.linkedin.com/in/joelmheim/" title="" target="">Jorn Olmheim</a></p>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>keep close to one’s heart(s)</span>  牢记于心、放在心上<br><span class='p green'>aspire to</span> 渴求<br><span class='p green'>formulae</span>  n. 公式（formula的复数)</p>
+<p>By <a href="https://www.linkedin.com/in/rajith-muditha-attapattu/" title="" target="">Rajith Attapattu</a></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>take stock of</span> 观察、估量<br><span class='p green'>temptation</span> n. 引诱；诱惑物<br><span class='p green'>take … into account</span> 考虑；重视；体谅<br><span class='p green'>gauge</span> v. 测量；估计</p>
 </blockquote>
 
 
@@ -441,7 +440,7 @@
           
         
           
-            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckcx1gc2s0000ydxfhksgh8qk/>http://yfzhang-nk.github.io/2020/ckcx1gc2s0000ydxfhksgh8qk/</a></p>
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckczxqjo00000rbxf7obod820/>http://yfzhang-nk.github.io/2020/ckczxqjo00000rbxf7obod820/</a></p>
           
         
       </blockquote>
@@ -466,10 +465,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-22T15:24:16+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-24T16:00:39+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年7月22日</p>
+    <p>更新于：2020年7月24日</p>
   </a>
 </div>
 
@@ -498,7 +497,7 @@
         <div class='hoverbox'>
           <a><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADpUlEQVR42u3aQXLjMAwEQP3/09kHbKXEAeAISpo3OzJNNHNADXx9WaV1IQAHDhw4Cxy4JXBXcf234eH76T7d5777XLVecODAgQMHDhy4bXDHDWD4/OnnqhcUF96sFxw4cODAgQMHbitc+sVpQ5w2wnfPdS8wrhccOHDgwIEDB+6XwZ1CVV9XzwsOHDhw4MCBAweuVmAaJKaBZnfADQ4cOHDgwIED91vgqkFgdSA9VdjrJvngwIEDBw4cOHBDcOmaCiifel2uFxw4cODAgQMHbgnc1A/1uoHi6b7VhnisXnDgwIEDBw4cuCVw3WDwtPA02EyDyNPzdesDBw4cOHDgwIHbAlctvDtw7jaqKWh1EA4OHDhw4MCBA/cWuLSB7B7wdN/u56pB6/FAGhw4cODAgQMH7iG47hdVg8JuMJpCdwNXcODAgQMHDhy4bXDpQDgtoNrgVi94+tzgwIEDBw4cOHDb4LpBYRWgO6BOG+nu8+DAgQMHDhw4cNvgpoLJuJEsFvKxgLKbAIMDBw4cOHDgwD0Edwo5FSx2C00b3eq+4MCBAwcOHDhwW+Gqje/089WLvIrrtBEGBw4cOHDgwIHbCpc2tmmj2W1Ip57rgoEDBw4cOHDgwG2DOx0kd3/w121Uq/tXB9ffvg8OHDhw4MCBA7ccburA3QuYusCxATc4cODAgQMHDtwyuCpAdTCd/n3qB4RpQHsbZIIDBw4cOHDgwD0ElzbC3YZyar9q4z4+yQcHDhw4cODAgXsIbmpQXA0I4wa0GZS2B+DgwIEDBw4cOHBL4KYa4G7QODUwTi8IHDhw4MCBAwfurXBpw9sNEKsBY7VB79YDDhw4cODAgQP3FrjqADjdJw1ITxvbTzfo4MCBAwcOHDhw2+CqYNOFVRvU7kUcB6DgwIEDBw4cOHDL4dJBbbfw6nnSRrb9feDAgQMHDhw4cMvhPt1gVmHSc11DCxw4cODAgQMHbhvcdMHdIDINLLtBavqPAQ4cOHDgwIEDtwWu2xCeDpZT8J8OTo8vEBw4cODAgQMHbhlc2vD+1MHThrZ7gbcXBQ4cOHDgwIEDtxSuGkx+KmicGpyXB9CnDTA4cODAgQMHDtxL4bqD6u7FTDe64MCBAwcOHDhwfw0uhbz7/q/imgpowYEDBw4cOHDg3gJXPVAXLG2gpwPNdgMMDhw4cODAgQP3ENzUwPY0OEwH3SlYucG9qxccOHDgwIEDB24JnBUGpAjAgQMHzgIH7tn1D9pie+LB/eUfAAAAAElFTkSuQmCC">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADoklEQVR42u3aQXLjMAwEQP//09n7plIiBpADOc2bLVkCmxfUwK8vK1ovBODAgQNngQO3BO4Vrv9/f/W8n65/K6z4ntPfj+0XHDhw4MCBAwduGdxxA3hR0OnvqgdzCprWf1w3OHDgwIEDBw7cUri00NPG86rAboOaNtLH94MDBw4cOHDgwH0IXAqbBp1TDTU4cODAgQMHDhy4GkAXvvpecODAgQMHDhy4vwJXHtAWC5kORNNG+dcn+eDAgQMHDhw4cENw6QD4qZ/j/YIDBw4cOHDgwC2B667pQfDp807r+Rpe4MCBAwcOHDhwW+DSIDDdWDU4TEGmDiZOgMGBAwcOHDhw4G6GSwfB6fW7/iDYBT7+Hhw4cODAgQMHbglcuQEMg8qr++4OStPnggMHDhw4cODAbYe7K4DsNshV8DR4PQ42wYEDBw4cOHDglsFNBYrdDaUD5WrAGQODAwcOHDhw4MAtgZseAHcPIA1E33Y/OHDgwIEDBw7cErhpkNPA87RR7g6c0z84ggMHDhw4cODAPQWu+qKpILQ68E4b9dPgFRw4cODAgQMH7lPgpiGnDiz9w2I30AQHDhw4cODAgdsKlxacPifewBB4OQgFBw4cOHDgwIFbAtcd5KZwU43t6funglZw4MCBAwcOHLinwnUb2O5KD3osYAUHDhw4cODAgVsCVy1supBuw5s2yHGd4MCBAwcOHDhwS+DSgW21MZ4eHFcb36mGHxw4cODAgQMHbhvc6R/5qo1lN1icHki3g05w4MCBAwcOHLhlcGkjmQagdwej6cGBAwcOHDhw4MA9Be60UZwGnbpeva/ayH/7DA4cOHDgwIED9xC4NFjsDqbvCiK7dYMDBw4cOHDgwG2B6waa1QazWngalKYBKThw4MCBAwcO3NPhqhuqBqDT76sGktXnggMHDhw4cODAbYNLB7RTjeldB5EGnpfXwYEDBw4cOHDglsB111Rh6UGkjW/cqIMDBw4cOHDgwC2Be4UrDRjTAXUXOj0IcODAgQMHDhy47XDVhre6sTSInAoy0wYeHDhw4MCBAwfuKXDTg+Opg3h30PrjZ3DgwIEDBw4cuA+Bm25UT4PK6vXT51/uBxw4cODAgQMH7sPgqhvqDrbT91UH4bcFmeDAgQMHDhw4cMNw3eAxbUSr953+Lj3At0/ywYEDBw4cOHDgQrhuod0BcDUgLQeQYZB6GWSCAwcOHDhw4MD9EpxVW+DAgQMHzgIH7pfXP9qaAggDyQduAAAAAElFTkSuQmCC">
           </div>
         </div>
       
@@ -518,19 +517,14 @@
         
           <div class="prev-next">
             
-              <a class='prev' href='/2020/ckczxqjo00000rbxf7obod820/'>
-                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>程序员应该知道的97件事-6 重构之前</p>
-                <p class='content'>原文链接：Before You Refactor
-重构之前某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：
-
-重构最好的方法应该...</p>
-              </a>
             
-            
-              <a class='next' href='/2020/ckcom8une0003toxfdp0qcfqv/'>
-                <p class='title'>程序员应该知道的97件事-4 自动化你的编码标准<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-                <p class='content'>原文链接：Automate Your Coding Standard
-自动化你的编码规范你可能有过这样的经历，项目一开始时，每个人都有很多想法-我们称为新项目决议。这些决议经常会记录到文档里。关...</p>
+              <a class='next' href='/2020/ckcx1gc2s0000ydxfhksgh8qk/'>
+                <p class='title'>程序员应该知道的97件事-5 美在简单之中<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>原文链接：Beauty Is in Simplicity
+美在简单之中有一句格言是所有软件开发者应该知道并且牢记于心的：
+风格、和谐、优雅、节奏之美取决于简单。
+柏拉图
+一言以蔽之，这句话概括出...</p>
               </a>
             
           </div>
@@ -575,7 +569,7 @@
 
   <script>
     window.subData = {
-      title: '程序员应该知道的97件事-5 美在简单之中',
+      title: '程序员应该知道的97件事-6 重构之前',
       tools: true
     }
   </script>
@@ -625,7 +619,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">美在简单之中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.</span> <span class="toc-text">单词</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">重构之前</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.</span> <span class="toc-text">单词</span></a></li></ol>
     </div>
   </section>
 

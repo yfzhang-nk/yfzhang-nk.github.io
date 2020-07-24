@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>程序员应该知道的97件事-6 重构之前</title>
+      <link href="/2020/ckczxqjo00000rbxf7obod820/"/>
+      <url>/2020/ckczxqjo00000rbxf7obod820/</url>
+      
+        <content type="html"><![CDATA[<p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/" title="" target="">Before You Refactor</a></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>重构之前</span></h2><p>某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：</p><ul><li><p>重构最好的方法应该从观察已有的代码库和相关测试案例。这会帮助你了解当前代码的优点和缺点，以保证能保留已有的优点和避免错误。我们都认为我们会比现有系统做的好…直到完成，发现我们有些事比以前做的并不比以前好，甚至更糟，因为我们没有从之前的错误中吸取教训。</p><a id="more"></a></li><li><p>避免重写所有的诱惑。最好重用尽量多的旧代码。不管代码多丑，但只要是被测试过和评审过的代码就可以重用。丢弃旧代码-尤其是已经上线的-意味着你丢弃了数月的测试和久经考验的代码，里面可能有很多背景和你不知道的缺陷修复。如果你不考虑这些，你写出来的代码就会出现很多难解的问题，而这些问题其实已经在旧代码中被修复了。这会浪费很多时间、精力和多年来获得的知识。</p></li><li><p>多次增量修改好于一次重大调整。增量调整可以让我们容易从反馈中（比如测试）获取对系统的影响。一次修改后出现上百个测试失败，肯定是不好的，这会导致我们感到挫折和压力，从而做出错误决定。一次两三个测试失败是容易处理的，提供更可管理性的方法。</p></li><li><p>每次迭代结束，保证现有测试案例通过是很重要的。如果现有测试不能充分覆盖你的变动，就要新增测试案例。没有经过应有的考虑就不要轻易抛弃旧代码的测试案例。表面上看其中一些测试可能并不适用新的设计，但是它们很值得深挖其中特殊测试案例存在的原因。</p></li><li><p>抛去个人喜好和自我。如果没有问题，为什么要去修复它？代码风格和结构不满足我们的喜好，不是一个好的重构理由。同样，你认为会比上一个程序员做的更好，这也不是一个好的理由。</p></li><li><p>追求新技术也不是重构的充分条件。最糟糕的重构原因就是当前代码已经远远落后今天最酷炫的技术，而且我们认为最新的语言和框架能做更多高级的事情。除非成本收益分析说明新语言或框架能够在功能性、维护性和创造性上产生重要提升，否则保持现状就好。</p></li><li><p>记住人总是会犯错的。重构永远不能保证新代码更好，或者和原来一样好。我曾经看到过，也经历过不少失败的重构。人非圣贤孰能无过。</p></li></ul><p>By <a href="https://www.linkedin.com/in/rajith-muditha-attapattu/" title="" target="">Rajith Attapattu</a></p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>take stock of</span> 观察、估量<br><span class='p green'>temptation</span> n. 引诱；诱惑物<br><span class='p green'>take … into account</span> 考虑；重视；体谅<br><span class='p green'>gauge</span> v. 测量；估计</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英文文章翻译 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序员应该知道的97件事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>程序员应该知道的97件事-5 美在简单之中</title>
       <link href="/2020/ckcx1gc2s0000ydxfhksgh8qk/"/>
       <url>/2020/ckcx1gc2s0000ydxfhksgh8qk/</url>
@@ -108,7 +133,7 @@
       <link href="/2020/ckceme0qt0000njxf7ug6aojn/"/>
       <url>/2020/ckceme0qt0000njxf7ug6aojn/</url>
       
-        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><a id="more"></a><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br><a href="/2020/ckcom8une0003toxfdp0qcfqv/" title="程序员应该知道的97件事-4 自动化你的编码标准">程序员应该知道的97件事-4 自动化你的编码标准</a> <br> <br>]]></content>
+        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><a id="more"></a><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br><a href="/2020/ckcom8une0003toxfdp0qcfqv/" title="程序员应该知道的97件事-4 自动化你的编码标准">程序员应该知道的97件事-4 自动化你的编码标准</a> <br> <br><a href="/2020/ckczxqjo00000rbxf7obod820/" title="程序员应该知道的97件事-6 重构之前">程序员应该知道的97件事-6 重构之前</a> <br>]]></content>
       
       
       <categories>
