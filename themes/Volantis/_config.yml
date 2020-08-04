@@ -110,9 +110,8 @@ cover:
     home: true
     archive: true
     others: false # can be written in front-matter 'cover: true'
-  logo:  https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar-no-background.png
+  logo:  https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar-no-bg-small.png
   title: 五灯的博客 
-  subtitle: '记录一个码农的学习历程'
   search: # search bar placeholder
   features:
     - name: 分类
@@ -427,14 +426,12 @@ footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [aplayer, social, license, info, copyright]
   social:
-    - icon: fas fa-rss
-      url: atom.xml
     - icon: fas fa-envelope
-      url: mailto:me@xxx.com
+      url: mailto:yfzhang_nk@qq.com
     - icon: fab fa-github
-      url: https://github.com/xaoxuu
-    - icon: fas fa-headphones-alt
-      url: https://music.163.com/#/user/home?id=63035382
+      url: https://github.com/yfzhang-nk
+    - icon: fab fa-qq
+      url: 382372329
   copyright: '[Copyright © 2017-2020 XXX](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
