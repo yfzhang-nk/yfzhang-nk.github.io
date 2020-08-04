@@ -16,9 +16,15 @@
 
   <!-- 页面元数据 -->
   
-  <title>所有标签 - 五灯</title>
+  <title>程序员应该知道的97件事-2 应用函数式编程原则 - 五灯</title>
+  
+    <meta name="keywords" content="程序员应该知道的97件事">
   
 
+  
+    <meta name="description" content="原文链接：Apply Functional Programming Principles
+应用函数式编程原则函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。
+掌握函数式编程可...">
   
 
   <!-- feed -->
@@ -66,7 +72,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover tag' style="display: none;">
+    <cover class='cover post' style="display: none;">
       <div class='cover-body'>
   <div class='a'>
     
@@ -361,10 +367,10 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">程序员应该知道的97件事-2 应用函数式编程原则</div>
   <div id="pjax-enable-cover">true</div>
-  <div id="pjax-permalink">http://yfzhang-nk.github.io/tags/index.html</div>
+  <div id="pjax-permalink">http://yfzhang-nk.github.io/2020/ckceme0r50006njxfabeu4lg6/</div>
   
   <div id="valine-path">none</div>
   <div id="valine-placeholder">none</div>
@@ -398,29 +404,285 @@
       
       
 
-
 <div class='l_main'>
   
-    
-      <section class="post-list ">
-        <div class='post-wrapper'>
-          <article id="archive-page" class="post article white-box reveal shadow">
-            <section class="archive">
-              <div class="archive-item archive-year mark">
-                <h2>所有标签</h2>
-              </div>
-              <div class="archive-item all-tags">
-                
-                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="tag">程序员应该知道的97件事</a><span class="tag-list-count">8</span></li></ul>
-              </div>
-              <br>
-              
-            </section>
-          </article>
-        </div>
-      </section>
-    
+
   
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+      
+      
+      <div class="meta" id="header-meta">
+        
+          
+  <h1 class="title">
+    <a href="/2020/ckceme0r50006njxfabeu4lg6/">
+      程序员应该知道的97件事-2 应用函数式编程原则
+    </a>
+  </h1>
+
+
+        
+        <div class='new-meta-box'>
+          
+            
+          
+            
+              
+<div class='new-meta-item author'>
+  <a class='author' href="https://yfzhang-nk.github.io" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png">
+    <p>五灯</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/' rel="nofollow">
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <p>英文文章翻译</p>
+    </a>
+  </div>
+
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年7月9日</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+
+            
+          
+        </div>
+        
+          <hr>
+        
+      </div>
+    
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          
+          <p>原文链接：<a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/" title="" target="">Apply Functional Programming Principles</a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>应用函数式编程原则</span></h2><p>函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。</p>
+<p>掌握函数式编程可以极大地提高你在其他上下文上写代码的质量。如果你能深入理解和应用函数范式，你的设计会拥有很高的引用透明性。</p>
+<a id="more"></a>
+
+<p>引用透明性是一个很好的特性：表示一个函数针对相同的输入，始终产生相同的结果，而不管是在什么地方和什么时候调用。也就是说，函数的求值很少依赖（理想中是完全不依赖）可变状态的副作用。</p>
+<p>命令式代码的主要缺陷来自可变的变量。读到这里的每个程序员都有这样的经历：在某个特殊情况下某些值不是期望的。可见性语义可以帮助我们减少这类问题，至少可以缩小范围，但真正的罪魁祸首是程序设计中滥用了变量。</p>
+<p>在这个方面，我们确实没有从中获取太多帮助。面向对象默认使用这样的设计，因为他们经常展示由多个相关且长生命周期的对象图表组成的示例，美其名曰赋值方法，这样做其实是很危险的。但是，通过巧妙的测试驱动开发的设计，特别是确保“模拟职责，而不是对象”，可以消除不必要的可变性。</p>
+<p>最终结果应该是这样一个设计：创建众多小函数，每个函数拥有自己的职责分配，按照输入的参数输出结果，而不是引用可变的成员变量。这样做产生的缺陷少，此外它们还容易调试，因为很容易定位该设计引入的标志值，比通过特定的上下文推断错误的赋值要好。这将大幅度增加引用透明性，想让这种意识深入骨髓，没有比学习函数式编程更好的办法了，因为这个在函数式编程中是作为标准出现的。</p>
+<p>当然，这个方法不是在所有场景下都是最优的。比如，在面向对象系统中，这种风格在领域模型开发（例：打破商业规则的复杂度）上比用户界面开发更能产出更好的结果</p>
+<p>掌握了函数式编程范式，你将更明智的把本章内容应用到其他领域。你的对象系统与引用透明性更能产生共鸣，跟函数式对等方式的接近程度超乎你的想象。实际上，有人断言函数式编程和面向对象编程是相互映射的两端，是计算机领域里的阴阳两极。</p>
+<p>By <a href="https://www.linkedin.com/in/egarson/" title="" target="">Edward Garson</a></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>be attributed to</span>  归因于…<br><span class='p green'>culprit</span>  n. 犯人，罪犯<br><span class='p green'>act on</span>  对…起作用；按照…行事<br><span class='p green'>rogue value</span> 维基百科上显示为sentinel value的别名，表示标记值</p>
+</blockquote>
+
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>函数式编程的特性我还没有深入的理解，此时不置评论。不过我相信，函数式编程有很好的特性，但软件工程上没有银弹，任何的设计都有适用的范围，使用前先深入了解它。</p>
+
+          
+            <div class='article_footer'>
+              
+                
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckceme0r50006njxfabeu4lg6/>http://yfzhang-nk.github.io/2020/ckceme0r50006njxfabeu4lg6/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget qrcode  desktop mobile">
+  
+
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/alipay_code.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/wechat_code.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-22T15:26:07+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年7月22日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>程序员应该知道的97件事</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADpElEQVR42u3aQXLjMAwEQP3/08l9q1wmBpADeZu3OLIkNi9TGF8/VrQuBODAgQNngQO3BO4K17/ff/mg8Pp333t1n1ffH9svOHDgwIEDBw7cMrjjAFjc+CnAu+vTg6u+/9uDBwcOHDhw4MCBWwqXvmgaWLvBtA1RPWhw4MCBAwcOHLgvgTvdwNQgsvreUwEcHDhw4MCBAwfuW+G6wTcN2NMHDw4cOHDgwIED91S4qUFgNyinA9Pu9R9r8sGBAwcOHDhw4Ibg0gL4qX/H+wUHDhw4cODAgVsC112nxXI1+Fa/Xw3a8X7BgQMHDhw4cOCWwE39gK+6odNBZQrSDbrtCTA4cODAgQMHDtzNcKcvXt1gOlg8hZ4GPv4cHDhw4MCBAwfuIXDdQvoUKA2y1feoHiA4cODAgQMHDtxWuE/9gLBbJFcPKL3/2+vAgQMHDhw4cOCWwKUDxyp4GqzT51Vhju8PDhw4cODAgQO3DG66oL4LeHpgWr4eHDhw4MCBAwduGVx3gNktmqsDyu7gsxrIwYEDBw4cOHDgtsGlxfLpg9Ji+fR500EXHDhw4MCBAwfuKXDpi3YHlN0fAk7Bl2HBgQMHDhw4cOCWwE0Fy+6gsjtQTYN5XEiDAwcOHDhw4MA9BK4aOKcAqwPR6YAODhw4cODAgQP3FLipAWT1/tUNd98jHaCCAwcOHDhw4MBtgesGytNBYzeAdgP0VMENDhw4cODAgQO3BS4tftOAmxbPdxfSx5+DAwcOHDhw4MAtgUsDbBemusFuYD8FHhtkggMHDhw4cODAfRiuGjTjINksoKvQ4MCBAwcOHDhw/wtcWiBPFc/dQeVtg1Vw4MCBAwcOHLglcGkQTAvkqWL5Cle7wAYHDhw4cODAgVsC1x30pUG4CtQtpKuBGRw4cODAgQMH7mlwaaBNA3N1gJnep3tfcODAgQMHDhy4bXDpxruFdDX4ThXc6YAUHDhw4MCBAwduG1x3VR+cBu3pwjs9EHDgwIEDBw4cuC1wV7imoNJBZ/qcLjg4cODAgQMHDtw2uDTwpi/YfW63AI8HueDAgQMHDhw4cEvh0qI4DbjVYjsdtN7W5IMDBw4cOHDgwD0Ubrqgrl53+v+xQSg4cODAgQMHDtyXwX262E6vqxbhtw0ywYEDBw4cOHDghuGmCunqwXRXGeDwAMGBAwcOHDhw4LbD3R1cU/j0gLsD0ONCGhw4cODAgQMH7o/grOIBIAAHDhw4Cxy4v12/5eeEW+6whuIAAAAASUVORK5CYII=">
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+              <a class='prev' href='/2020/ckcfwsxmd0000toxf8pbubn7a/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>程序员应该知道的97件事-3 想想用户会怎么做</p>
+                <p class='content'>原文链接：Ask What Would the User Do? (You Are not the User)
+问问“用户会怎么做”我们倾向于假设其他人和我们思考方式一样，但是他们不会。心理学家...</p>
+              </a>
+            
+            
+              <a class='next' href='/2020/ckceme0qt0000njxf7ug6aojn/'>
+                <p class='title'>每个程序员应该知道的97件事<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。
+首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：
+
+Alg...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      <section id="comments">
+        <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+      </section>
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
 </div>
 <aside class='l_side'>
   
@@ -432,11 +694,26 @@
 
 
 
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text">应用函数式编程原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-text">单词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-text">个人观点</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
 
 </aside>
+
 
 
     </div>
