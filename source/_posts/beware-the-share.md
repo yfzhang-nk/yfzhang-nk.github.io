@@ -7,7 +7,7 @@ categories:
 	- 英文文章翻译
 ---
 
-原文链接：{% link Beware the Share https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_07/  %}
+原文链接：{% link Beware the Share, https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_07/  %}
 
 ## {% span blue, 当心共享%}
 
@@ -20,7 +20,7 @@ categories:
 {% emp 上下文 %}
 
 系统中两个截然不同的部分以相同的方式执行某种逻辑，并没有我们想象中的那么重要。直到我把这些库中共享代码抽离出来为止，这些部分的代码互相是不依赖的。每一部分都可以独立演化。每一部分都可以修改自己的逻辑以满足系统日益变化的业务需求。四行相似的代码是偶然的--暂时的异常、一个巧合。直到我出现。
-
+<!-- more -->
 我构建的共享代码就像把彼此的鞋带绑在了一起。这样的话，一个业务领域的步骤如果不与其他业务同步就不能被创建出来。功能独立的维护成本通常是微不足道的，但是通用库则需要多一个数量级的测试。
 
 当我减少了系统中的代码行数，却增加了一堆的依赖。这些依赖的上下文很重要--如果已经被本地化了，那么它可能是合理的，并且有一些积极的价值。如果这些依赖关联不大，即使它们看起来很好，但也会使系统陷入更大的问题中。
@@ -29,7 +29,7 @@ categories:
 
 当心共享代码。仔细检查上下文。只有这样才能继续。
 
-By {% link Udi Dahan  https://www.linkedin.com/in/udidahan/?originalSubdomain=il %}
+By {% link Udi Dahan, https://www.linkedin.com/in/udidahan/?originalSubdomain=il, https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/logo/128/linkedin.png%}
 
 ## {% span blue, 单词 %}
 {% pullquote [class] %}
