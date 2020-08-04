@@ -22,6 +22,9 @@
   
 
   
+    <meta name="description" content="原文链接：Beware the Sharehttps://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_07/
+当心共享那是我在公司的第一个项目，我刚刚完成我的学位...">
+  
 
   <!-- feed -->
   
@@ -477,18 +480,19 @@
         <div class="article-entry" itemprop="articleBody">
           
           
-          <p>原文链接：</p>
+          <p>原文链接：<div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_07/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_07/' target="_blank" rel="noopener"><div class='left'><i class='fas fa-link'></i></div><div class='right'><p class='text'>Beware the Share</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_07/</p></div></a></div></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>当心共享</span></h2><p>那是我在公司的第一个项目，我刚刚完成我的学位，急于证明自己，每天工作到很晚，检查已有的代码。当我做完第一个功能开发，我格外小心地把学到的所有东西落实到位，评论、日志、尽可能的抽离共享代码到库中。然后对我认为已经准备好的代码做评审时，使我意识到重用是不被赞同的。</p>
 <p>怎么会这样呢？学校里重用被认为是高质量软件工程的缩影。我读过的文章和教科书，以及资深的软件工程师都是这样告诉我的。一切都错了吗？</p>
 <p>原来是我漏掉了一个关键信息：</p>
 <emp>上下文</emp>
 
 <p>系统中两个截然不同的部分以相同的方式执行某种逻辑，并没有我们想象中的那么重要。直到我把这些库中共享代码抽离出来为止，这些部分的代码互相是不依赖的。每一部分都可以独立演化。每一部分都可以修改自己的逻辑以满足系统日益变化的业务需求。四行相似的代码是偶然的–暂时的异常、一个巧合。直到我出现。</p>
+<a id="more"></a>
 <p>我构建的共享代码就像把彼此的鞋带绑在了一起。这样的话，一个业务领域的步骤如果不与其他业务同步就不能被创建出来。功能独立的维护成本通常是微不足道的，但是通用库则需要多一个数量级的测试。</p>
 <p>当我减少了系统中的代码行数，却增加了一堆的依赖。这些依赖的上下文很重要–如果已经被本地化了，那么它可能是合理的，并且有一些积极的价值。如果这些依赖关联不大，即使它们看起来很好，但也会使系统陷入更大的问题中。</p>
 <p>这些错误是隐蔽的，因为它们的核心内容听起来像一个好主意。当应用到正确的上下文中，这些技术是有价值的。但是在错误的上下文中，它们增加的消耗比价值更大。当碰到一段已经存在的代码，不知道都是哪些不同部分在使用它，我对哪些内容该共享会更加小心。</p>
 <p>当心共享代码。仔细检查上下文。只有这样才能继续。</p>
-<p>By </p>
+<p>By <div><a class='link-card' title='https://www.linkedin.com/in/udidahan/?originalSubdomain=il' href='https://www.linkedin.com/in/udidahan/?originalSubdomain=il' target="_blank" rel="noopener"><div class='left'><img src=https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/logo/128/linkedin.png></div><div class='right'><p class='text'>Udi Dahan</p><p class='url'>https://www.linkedin.com/in/udidahan/?originalSubdomain=il</p></div></a></div></p>
 <h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>put in place</span> 到位；落实到位；正在实施<br><span class='p green'>up until</span> 一直到…为止<br><span class='p green'>negligible</span> adj. 微不足道的，可以忽略的<br><span class='p green'>be held in check</span> 牵制于人<br><span class='p green'>insidious</span> adj. 阴险的；隐伏的；狡猾的</p>
 </blockquote>
 
@@ -580,7 +584,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-08-05T00:45:11+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-08-05T01:02:03+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年8月5日</p>
