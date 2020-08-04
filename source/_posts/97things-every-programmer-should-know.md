@@ -25,3 +25,4 @@ categories:
 {% post_link automate-your-coding-standard %} <br>
 {% post_link beauty-is-in-simple %} <br>
 {% post_link before-you-refactor %} <br>
+{% post_link beware-the-share %} <br>
