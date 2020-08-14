@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>程序员应该知道的97件事-8 童子军规则</title>
+      <link href="/2020/ckdu1wdb4000027xfawxsh0l6/"/>
+      <url>/2020/ckdu1wdb4000027xfawxsh0l6/</url>
+      
+        <content type="html"><![CDATA[<p>原文链接: <div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_08/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_08/' target="_blank" rel="noopener"><div class='left'><i class='fas fa-link'></i></div><div class='right'><p class='text'>The Boy Scout Rule</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_08/</p></div></a></div></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>童子军规则</span></h2><p>童子军有一条规则：总是保持营地比你发现它时还要干净。如果你发现地上一团糟，不管是谁弄脏的，你都要打扫干净。你有意为下一组露营者改善周围环境。事实上这条规则的原始版本是出自罗伯特·史蒂芬生·史密斯·贝登堡(童子军运动创始人)，内容是尝试让这个世界比你发现它的时候变的更好一点。</p><p>假如我们在代码中也遵循这条规则：总是在提交代码时比上次拿到的模块代码更整洁。不管谁是原始作者，假如我们总是做出努力去提高模块，即使每次一点点。那将会是什么结果呢？</p><p>我认为如果我们遵循这条简单的规则，我们会看到软件系统持续恶化的终结。相反，我们的系统随着进化会越来越好。我们将看到团队将系统作为一个整体来对待，而不是各自手头的那一小部分。</p><a id="more"></a><p>我认为这个规则的要求并不过分。你不必在提交代码时让每个模块都完美。你只需要简单的让它比你获取代码时好那么一点。当然这意味着你添加的任何代码都必须是整洁的。这也意味着你提交模块时至少要整理其他一件事情。你可能简单优化了一个变量名称，或者把一个超大函数拆成了两个小函数。你可能修复了一个循环依赖，或者加了一个接口来解耦策略和细节。</p><p>坦率的讲，这对我来说再普通不过了，就像便后要洗手，或者把垃圾扔到垃圾筒里而不是扔到地上一样。的确，把代码搞遭的行为和乱扔垃圾一样不被社会所接受，都是不应该做的事情。</p><p>但是不止这些，关心你的代码是一件事情，关心团队的代码是另一件事情。团队应该互相帮助，互相整理。他们应该遵守童子军规则，因为它对所有人都好，不仅仅是对他们好。</p><p>By <div><a class='link-card' title='https://blog.cleancoder.com/' href='https://blog.cleancoder.com/' target="_blank" rel="noopener"><div class='left'><img src=https://blog.cleancoder.com/assets/clean_code_72_color.png></div><div class='right'><p class='text'>Uncle Bob</p><p class='url'>https://blog.cleancoder.com/</p></div></a></div></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英文文章翻译 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序员应该知道的97件事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>程序员应该知道的97件事-7 当心共享</title>
       <link href="/2020/ckddwsgpo00007gxf6u1f5we1/"/>
       <url>/2020/ckddwsgpo00007gxf6u1f5we1/</url>
