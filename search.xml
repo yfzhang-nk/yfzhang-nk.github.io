@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>程序员应该知道的97件事-9 先检查你自己的代码</title>
+      <link href="/2020/cke4788w6000015xf8vm7eftj/"/>
+      <url>/2020/cke4788w6000015xf8vm7eftj/</url>
+      
+        <content type="html"><![CDATA[<p>原文链接：<div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_09/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_09/' target="_blank" rel="noopener"><div class='left'><img src=https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg></div><div class='right'><p class='text'>Check Your Code First before Looking to Blame Others</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_09/</p></div></a></div></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>责备别人之前先检查自己的代码</span></h2><p>程序员们经常很难相信自己的代码是有问题的。这是不太可能的，以至于我们总是觉得是编译器的问题。</p><p>然而事实上，代码问题是由编译器、解释器、操作系统、应用服务器、数据库、内存管理或者其他系统软件的bug引起的可能性非常少见。的确，这些bug存在，但是它们远没有我们想象中的普遍。</p><p>我曾经在优化一个循环变量时遇到过一个编译器错误，但是我却认为我的编译器和操作系统发生过很多次这样的错误。在这个过程中我浪费了很多时间，除了我自己的，还有支持人员和管理人员的时间，最终都证明是我的错误，这让我觉得很愚蠢。</p><p>假设这个工具被广泛的使用、功能成熟并且被应用到很多技术栈中，那应该是没有什么理由去怀疑它的质量。当然，如果这个工具刚刚发布、世界范围内很少人使用或者下载、0.1版本的开源软件，我们可能有好的理由去怀疑这个软件。同样，商业软件的alpha版本也可能受到怀疑。</p><a id="more"></a><p>鉴于编译器bug很少见，把时间和精力放在寻找你自己代码上的错误，比证明编译器有问题要好的多。所有常用调试建议都试用：分离问题，终止调用，测试覆盖；检查调用约定、共享代码库、版本号；向其他人解释代码；注意堆栈污染和变量类型错误；在不同的机器上运行代码或者使用不同构建配置（调试或者发布）进行编译。</p><p>质疑你的或者其他人的设想。不同供应商的工具可能基于不同的设想去构建工具–相同供应商的也有可能不同的工具。当别人报告一个问题，你不能复现，就去看看他们是怎么操作的。他们有可能做了你从没想过的操作或者按照不同顺序进行了操作。</p><p>我有一个个人规则，如果有一个bug我查不到原因，我就会开始寻找编译器的原因，然后是查看堆栈错误。特别正确的做法是加一些跟踪代码，让问题显现出来。</p><p>多线程问题是引起bug的另一个原因，它会让你头发变白，对着机器大喊大叫。当系统是多线程的时候，支持简单代码的所有建议也成倍增加。想找出关于一致性的bug仅仅依赖于调试和单元测试是不行的，这个时候设计的简单性至关重要。</p><p>所以别着急找编译器的错误，记住夏洛克 福尔摩斯的建议: 除去不可能的，剩下的即使再不太可能，那也是真相。我更喜欢怪探德克的那句话：除去不太可能的，剩下的即使再不可能，那也是真相。</p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>stub out</span> 掐灭、踩熄<br><span class='p green'>paramount</span> adj. 最重要的，主要的；至高无上的 n. 最高统治者</p></blockquote><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>总结来说就是先从自身找问题，再去找别人的问题。经常被人用的代码问题肯定比你写代码出现问题的可能性要小的多，因为问题早都在初期被人找到并且修复了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英文文章翻译 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序员应该知道的97件事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>程序员应该知道的97件事-8 童子军规则</title>
       <link href="/2020/ckdu1wdb4000027xfawxsh0l6/"/>
       <url>/2020/ckdu1wdb4000027xfawxsh0l6/</url>
@@ -183,7 +208,7 @@
       <link href="/2020/ckceme0qt0000njxf7ug6aojn/"/>
       <url>/2020/ckceme0qt0000njxf7ug6aojn/</url>
       
-        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><a id="more"></a><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br><a href="/2020/ckcom8une0003toxfdp0qcfqv/" title="程序员应该知道的97件事-4 自动化你的编码标准">程序员应该知道的97件事-4 自动化你的编码标准</a> <br><a href="/2020/ckcx1gc2s0000ydxfhksgh8qk/" title="程序员应该知道的97件事-5 美在简单之中">程序员应该知道的97件事-5 美在简单之中</a> <br><a href="/2020/ckczxqjo00000rbxf7obod820/" title="程序员应该知道的97件事-6 重构之前">程序员应该知道的97件事-6 重构之前</a> <br><a href="/2020/ckddwsgpo00007gxf6u1f5we1/" title="程序员应该知道的97件事-7 当心共享">程序员应该知道的97件事-7 当心共享</a> <br>]]></content>
+        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><a id="more"></a><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br><a href="/2020/ckcom8une0003toxfdp0qcfqv/" title="程序员应该知道的97件事-4 自动化你的编码标准">程序员应该知道的97件事-4 自动化你的编码标准</a> <br><a href="/2020/ckcx1gc2s0000ydxfhksgh8qk/" title="程序员应该知道的97件事-5 美在简单之中">程序员应该知道的97件事-5 美在简单之中</a> <br><a href="/2020/ckczxqjo00000rbxf7obod820/" title="程序员应该知道的97件事-6 重构之前">程序员应该知道的97件事-6 重构之前</a> <br><a href="/2020/ckddwsgpo00007gxf6u1f5we1/" title="程序员应该知道的97件事-7 当心共享">程序员应该知道的97件事-7 当心共享</a> <br><a href="/2020/cke4788w6000015xf8vm7eftj/" title="程序员应该知道的97件事-9 先检查你自己的代码">程序员应该知道的97件事-9 先检查你自己的代码</a> <br>]]></content>
       
       
       <categories>
