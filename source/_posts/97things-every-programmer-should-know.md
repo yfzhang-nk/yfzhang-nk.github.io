@@ -26,4 +26,6 @@ categories:
 {% post_link beauty-is-in-simplicity %} <br>
 {% post_link before-you-refactor %} <br>
 {% post_link beware-the-share %} <br>
+{% post_link the-boy-scout-rule %} <br>
 {% post_link check-your-code-first %} <br>
+{% post_link choose-your-tools-with-care%} <br>
