@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,9 +16,14 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2020/8 - 五灯</title>
+  <title>程序员应该知道的97件事-10 谨慎选择工具 - 五灯</title>
+  
+    <meta name="keywords" content="程序员应该知道的97件事">
   
 
+  
+    <meta name="description" content="原文链接: Choose Your Tools with Carehttps://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/
+谨慎选择工具现代应用很少是从...">
   
 
   <!-- feed -->
@@ -68,7 +71,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover ' style="display: none;">
+    <cover class='cover post' style="display: none;">
       <div class='cover-body'>
   <div class='a'>
     
@@ -352,7 +355,7 @@
   
 
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper' id="pjax-container">
       
         <!--此文件用来存放一些不方便取值的变量-->
@@ -361,10 +364,10 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">程序员应该知道的97件事-10 谨慎选择工具</div>
   <div id="pjax-enable-cover">true</div>
-  <div id="pjax-permalink"></div>
+  <div id="pjax-permalink">http://yfzhang-nk.github.io/2020/ckevaqsnj00007oxf57pn8k2n/</div>
   
   <div id="valine-path">none</div>
   <div id="valine-placeholder">none</div>
@@ -375,16 +378,16 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("blog" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover')[0].style.display = "none";
     document.getElementsByClassName('l_body')[0].classList.add("nocover");
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("blog" == "blog") { // 半屏
+    if ("none" == "blog") { // 半屏
       document.getElementsByClassName('cover')[0].classList.remove("full");
       document.getElementsByClassName('cover')[0].classList.add("half");
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("blog" == "docs") { // 全屏
+    } else if ("none" == "docs") { // 全屏
       document.getElementsByClassName('cover')[0].classList.remove("half");
       document.getElementsByClassName('cover')[0].classList.add("full");
       document.getElementsByClassName('scroll-down')[0].style.display = "";
@@ -399,24 +402,11 @@
       
 
 <div class='l_main'>
-	
-		
-  <section class="post-list ">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
   
+
+  
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -426,11 +416,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/cke4788w6000015xf8vm7eftj/">
-      程序员应该知道的97件事-9 先检查你自己的代码
+  <h1 class="title">
+    <a href="/2020/ckevaqsnj00007oxf57pn8k2n/">
+      程序员应该知道的97件事-10 谨慎选择工具
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -466,31 +456,9 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年8月20日</p>
+    <p>发布于：2020年9月9日</p>
   </a>
 </div>
-
-            
-          
-            
-              
-
-            
-          
-            
-              
-  <div class="new-meta-item browse valine">
-    <a class='notlink'>
-      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-      
-      <span id="/2020/cke4788w6000015xf8vm7eftj/" class="leancloud_visitors" data-flag-title="程序员应该知道的97件事-9 先检查你自己的代码">
-      <p>
-        <span class="leancloud-visitors-count"></span>
-      </p>
-      </span>
-    </a>
-  </div>
-
 
             
           
@@ -508,212 +476,70 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>原文链接：<div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_09/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_09/' target="_blank" rel="noopener"><div class='left'><img src=https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg></div><div class='right'><p class='text'>Check Your Code First before Looking to Blame Others</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_09/</p></div></a></div></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>责备别人之前先检查自己的代码</span></h2><p>程序员们经常很难相信自己的代码是有问题的。这是不太可能的，以至于我们总是觉得是编译器的问题。</p>
-<p>然而事实上，代码问题是由编译器、解释器、操作系统、应用服务器、数据库、内存管理或者其他系统软件的bug引起的可能性非常少见。的确，这些bug存在，但是它们远没有我们想象中的普遍。</p>
-<p>我曾经在优化一个循环变量时遇到过一个编译器错误，但是我却认为我的编译器和操作系统发生过很多次这样的错误。在这个过程中我浪费了很多时间，除了我自己的，还有支持人员和管理人员的时间，最终都证明是我的错误，这让我觉得很愚蠢。</p>
-<p>假设这个工具被广泛的使用、功能成熟并且被应用到很多技术栈中，那应该是没有什么理由去怀疑它的质量。当然，如果这个工具刚刚发布、世界范围内很少人使用或者下载、0.1版本的开源软件，我们可能有好的理由去怀疑这个软件。同样，商业软件的alpha版本也可能受到怀疑。</p>
-      
-    </div>
-    
-      
-        <a class= "readmore" href="/2020/cke4788w6000015xf8vm7eftj/">
-          阅读全文 <i class="fas fa-chevron-right"></i>
-        </a>
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
-  
-
-
-  <section class='meta'>
-    
-      
-      
-      <div class="meta" id="header-meta">
-        
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
           
-  <h2 class="title">
-    <a href="/2020/ckdu1wdb4000027xfawxsh0l6/">
-      程序员应该知道的97件事-8 童子军规则
-    </a>
-  </h2>
-
-
-        
-        <div class='new-meta-box'>
           
-            
+          <p>原文链接: <div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/' target="_blank" rel="noopener"><div class='left'><img src=https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg></div><div class='right'><p class='text'>Choose Your Tools with Care</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/</p></div></a></div></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>谨慎选择工具</span></h2><p>现代应用很少是从头构建的，而是用现有工具组装而成的，比如组件、代码库和框架，原因有很多：</p>
+<ul>
+<li>应用变得越来越大、越来越复杂，但是留给程序员开发它的时间却越来越短。为了更好的利用开发者的时间和智慧，最好让他们更多集中在商业逻辑代码上而不是基础架构的代码。</li>
+<li>相比自己开发，广泛的使用组件和框架很可能减少Bug。</li>
+<li>有很多高质量的软件在网络上可以找到免费且可用的版本，这就意味着你很可能花更少的钱雇到有足够兴趣又专业的开发者。</li>
+<li>软件开发和维护是人力密集型的工作，所以购买比构建更便宜。<a id="more"></a>
+
+</li>
+</ul>
+<p>但是，为你的应用选择合适的工具组合是一件需要深思熟虑的棘手工作。事实上在做决定时，有以下几件事情你需要考虑：</p>
+<ul>
+<li>不同工具可能依赖不同上下文的假设–比如周边的基础架构、控制模型、数据模型、通讯协议等，这很可能导致应用和工具之间架构的不匹配。这样的不匹配可能引起非法入侵或者其他变通法，使得代码更复杂而非必要。</li>
+<li>不同工具拥有不同的生命周期，更新其中一个工具是一项及其复杂且耗时的任务，因为新功能、设计变化、甚至是修复Bug都可能会引起与其他工具的不兼容。工具越多问题越糟。</li>
+<li>一些工具需要很复杂的配置，通常使用一个或多个XML文件，这会很快变得不可控。应用最终就会看起来像是由XML写的加上一些其他语言的零星代码。配置的复杂性让应用变得很难维护和扩展。</li>
+<li>当代码严重依赖特定厂商产品时就会出现厂商锁定的现象，最终会在以下几方面受到限制：可维护性、性能、演化能力、价格等。</li>
+<li>当你计划使用免费软件时，你会发现它并不完全免费。你可能需要购买商业支持，这些支持并不必然便宜。</li>
+<li>许可条款很重要，尤其是开源软件。例如，很多公司不接受使用GNU协议的，因为它的病毒性质–基于它开发的软件必须公开源代码。</li>
+</ul>
+<p>我个人有一个策略，用来减缓以上这些问题：从小应用开始仅使用觉得必要的工具。通常最初的关注点是消除低水平基础架构的编程，比如使用一些中间件替代套接字，然后根据需要增加。我也倾向于通过接口和分层的方式把外部工具从业务对象隔离开，这样我如果感受不太好用时，就可以更换工具。这个方法好处在于我通常获得一个更小的应用，使用的外部工具比预想的要少很多。</p>
+
           
-            
+            <div class='article_footer'>
               
-<div class='new-meta-item author'>
-  <a class='author' href="https://yfzhang-nk.github.io" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png">
-    <p>五灯</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/' rel="nofollow">
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>英文文章翻译</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年8月14日</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-
-            
-          
-            
-              
-  <div class="new-meta-item browse valine">
-    <a class='notlink'>
-      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-      
-      <span id="/2020/ckdu1wdb4000027xfawxsh0l6/" class="leancloud_visitors" data-flag-title="程序员应该知道的97件事-8 童子军规则">
-      <p>
-        <span class="leancloud-visitors-count"></span>
-      </p>
-      </span>
-    </a>
-  </div>
-
-
-            
-          
-            
-              
-
-            
-          
-        </div>
-        
-          <hr>
-        
-      </div>
-    
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>原文链接: <div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_08/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_08/' target="_blank" rel="noopener"><div class='left'><img src=https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg></div><div class='right'><p class='text'>The Boy Scout Rule</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_08/</p></div></a></div></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>童子军规则</span></h2><p>童子军有一条规则：总是保持营地比你发现它时还要干净。如果你发现地上一团糟，不管是谁弄脏的，你都要打扫干净。你有意为下一组露营者改善周围环境。事实上这条规则的原始版本是出自罗伯特·史蒂芬生·史密斯·贝登堡(童子军运动创始人)，内容是尝试让这个世界比你发现它的时候变的更好一点。</p>
-<p>假如我们在代码中也遵循这条规则：总是在提交代码时比上次拿到的模块代码更整洁。不管谁是原始作者，假如我们总是做出努力去提高模块，即使每次一点点。那将会是什么结果呢？</p>
-<p>我认为如果我们遵循这条简单的规则，我们会看到软件系统持续恶化的终结。相反，我们的系统随着进化会越来越好。我们将看到团队将系统作为一个整体来对待，而不是各自手头的那一小部分。</p>
-      
-    </div>
-    
-      
-        <a class= "readmore" href="/2020/ckdu1wdb4000027xfawxsh0l6/">
-          阅读全文 <i class="fas fa-chevron-right"></i>
-        </a>
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
-
-
-	
-</div>
-<aside class='l_side'>
-  
+                
   
     
     
 
-<section class="widget blogger shadow desktop mobile">
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">五灯</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
+      <blockquote>
         
           
-            <a href="mailto:yfzhang_nk@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
           
         
           
-            <a href="https://github.com/yfzhang-nk"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckevaqsnj00007oxf57pn8k2n/>http://yfzhang-nk.github.io/2020/ckevaqsnj00007oxf57pn8k2n/</a></p>
           
         
-          
-            <a href="/382372329"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-      </div>
+      </blockquote>
     
   </div>
 </section>
@@ -723,72 +549,163 @@
   
     
     
+
+<section class="widget qrcode  desktop mobile">
   
 
-  <section class="widget category shadow desktop">
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/alipay_code.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/wechat_code.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-09T19:25:25+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年9月9日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>程序员应该知道的97件事</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADqElEQVR42u3aS24bQQwFQN//0sk+gDEkH2XRSvVOQk9/ajZPpL7+GKPxhQAcOHDgDHDgjsB9DUd5o+Zz/8777rnqvKfzdO8LDhw4cODAgQN3Da4LMZ333YWrL2j7+faLBAcOHDhw4MCBOwr3GAAf5leD79MF0uBdDcrt+4IDBw4cOHDgwH0YXAqWFjCrwODAgQMHDhw4cOBqAbhbcOwWJKeFT3DgwIEDBw4cuE+DSwuD2/Om0FWIt3XywYEDBw4cOHDgluC6o3vxa5/H9wUHDhw4cODAgTsCl45qMJ0G4+mLrDao2/cFBw4cOHDgwIE7ApcWBquQ0xcxhe6uX34eHDhw4MCBAwfuGNzTg1tBcnrgtOFdBX1cDxw4cODAgQMH7ghcFWY72KYF0WnBdDofHDhw4MCBAwfuGtz0wGkg7QbrtMG9dl5w4MCBAwcOHLgjcN0FpwG1e5G0EJr+0bH8ywEcOHDgwIEDB+5NcFsFxG7DN21Qd4NvOh8cOHDgwIEDB+4aXNqYTserGuJb+49/OYADBw4cOHDgwL0YrrpgGnC7F9wqiKbrggMHDhw4cODAXYWbNnqnwNsN61cHcXDgwIEDBw4cuKtw24G3G6ynjeOtBnN7X3DgwIEDBw4cuKNwaRCdBtNX79NtdH/7PThw4MCBAwcO3BG47kJpYXJ6oS7ItHHdbkiDAwcOHDhw4MC9Ga4aBLsN6umL6Qbk6vxpgRUcOHDgwIEDB+4aXLeQ2IXZakxvBdjq8+OGNDhw4MCBAwcO3A/BdQNlNyinQThtSE+DcLuQCQ4cOHDgwIED9ya4n240p/v9NDQ4cODAgQMHDtxVuLWG7TD4Ti+6HbgfP4MDBw4cOHDgwB2Bq26cAqT7bQfu8b7gwIEDBw4cOHDH4LoH7f6xL4XeKkzG9wQHDhw4cODAgfulcN1AOm0Yp4XI6Yt43A8cOHDgwIEDB+443BZEdb2tguhWQxscOHDgwIEDB+46XDrSAJ0CbDWsywVXcODAgQMHDhy4I3BpIOw2ilOIacM6PSc4cODAgQMHDtxVuGngnTacpwXN9LzpuuDAgQMHDhw4cFfh2oGwCTA+cFiQTAM+OHDgwIEDBw7c/wJXDbzTgug0iMf3AQcOHDhw4MCB+3C4dF63YNkNzN0gDQ4cOHDgwIEDdx1uq6C4XeicFjzTFwQOHDhw4MCBA3cdbtqwTQuPW0G43ViengscOHDgwIEDB+4InNEsdCIABw4cOAMcuPeOv7oAeQ+vpD5cAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/cke4788w6000015xf8vm7eftj/'>
+                <p class='title'>程序员应该知道的97件事-9 先检查你自己的代码<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>原文链接：Check Your Code First before Looking to Blame Othershttps://97-things-every-x-should-know.gi...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      <section id="comments">
+        <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+      </section>
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+</div>
+<aside class='l_side'>
+  
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/"
-            id="categoriesE88BB1E69687E69687E7ABA0E7BFBBE8AF91"
-            ><div class='name'>英文文章翻译</div><div class='badge'>(11)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
-            id="categoriesE99A8FE7AC94"
-            ><div class='name'>随笔</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text">谨慎选择工具</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" style="font-size: 24px; color: #555">程序员应该知道的97件事</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
 
-
-
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
 
 
     </div>

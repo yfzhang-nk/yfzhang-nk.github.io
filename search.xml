@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>程序员应该知道的97件事-10 谨慎选择工具</title>
+      <link href="/2020/ckevaqsnj00007oxf57pn8k2n/"/>
+      <url>/2020/ckevaqsnj00007oxf57pn8k2n/</url>
+      
+        <content type="html"><![CDATA[<p>原文链接: <div><a class='link-card' title='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/' href='https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/' target="_blank" rel="noopener"><div class='left'><img src=https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg></div><div class='right'><p class='text'>Choose Your Tools with Care</p><p class='url'>https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_10/</p></div></a></div></p><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>谨慎选择工具</span></h2><p>现代应用很少是从头构建的，而是用现有工具组装而成的，比如组件、代码库和框架，原因有很多：</p><ul><li>应用变得越来越大、越来越复杂，但是留给程序员开发它的时间却越来越短。为了更好的利用开发者的时间和智慧，最好让他们更多集中在商业逻辑代码上而不是基础架构的代码。</li><li>相比自己开发，广泛的使用组件和框架很可能减少Bug。</li><li>有很多高质量的软件在网络上可以找到免费且可用的版本，这就意味着你很可能花更少的钱雇到有足够兴趣又专业的开发者。</li><li>软件开发和维护是人力密集型的工作，所以购买比构建更便宜。<a id="more"></a></li></ul><p>但是，为你的应用选择合适的工具组合是一件需要深思熟虑的棘手工作。事实上在做决定时，有以下几件事情你需要考虑：</p><ul><li>不同工具可能依赖不同上下文的假设–比如周边的基础架构、控制模型、数据模型、通讯协议等，这很可能导致应用和工具之间架构的不匹配。这样的不匹配可能引起非法入侵或者其他变通法，使得代码更复杂而非必要。</li><li>不同工具拥有不同的生命周期，更新其中一个工具是一项及其复杂且耗时的任务，因为新功能、设计变化、甚至是修复Bug都可能会引起与其他工具的不兼容。工具越多问题越糟。</li><li>一些工具需要很复杂的配置，通常使用一个或多个XML文件，这会很快变得不可控。应用最终就会看起来像是由XML写的加上一些其他语言的零星代码。配置的复杂性让应用变得很难维护和扩展。</li><li>当代码严重依赖特定厂商产品时就会出现厂商锁定的现象，最终会在以下几方面受到限制：可维护性、性能、演化能力、价格等。</li><li>当你计划使用免费软件时，你会发现它并不完全免费。你可能需要购买商业支持，这些支持并不必然便宜。</li><li>许可条款很重要，尤其是开源软件。例如，很多公司不接受使用GNU协议的，因为它的病毒性质–基于它开发的软件必须公开源代码。</li></ul><p>我个人有一个策略，用来减缓以上这些问题：从小应用开始仅使用觉得必要的工具。通常最初的关注点是消除低水平基础架构的编程，比如使用一些中间件替代套接字，然后根据需要增加。我也倾向于通过接口和分层的方式把外部工具从业务对象隔离开，这样我如果感受不太好用时，就可以更换工具。这个方法好处在于我通常获得一个更小的应用，使用的外部工具比预想的要少很多。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 英文文章翻译 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序员应该知道的97件事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>程序员应该知道的97件事-9 先检查你自己的代码</title>
       <link href="/2020/cke4788w6000015xf8vm7eftj/"/>
       <url>/2020/cke4788w6000015xf8vm7eftj/</url>
@@ -208,7 +233,7 @@
       <link href="/2020/ckceme0qt0000njxf7ug6aojn/"/>
       <url>/2020/ckceme0qt0000njxf7ug6aojn/</url>
       
-        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><a id="more"></a><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br><a href="/2020/ckcom8une0003toxfdp0qcfqv/" title="程序员应该知道的97件事-4 自动化你的编码标准">程序员应该知道的97件事-4 自动化你的编码标准</a> <br><a href="/2020/ckcx1gc2s0000ydxfhksgh8qk/" title="程序员应该知道的97件事-5 美在简单之中">程序员应该知道的97件事-5 美在简单之中</a> <br><a href="/2020/ckczxqjo00000rbxf7obod820/" title="程序员应该知道的97件事-6 重构之前">程序员应该知道的97件事-6 重构之前</a> <br><a href="/2020/ckddwsgpo00007gxf6u1f5we1/" title="程序员应该知道的97件事-7 当心共享">程序员应该知道的97件事-7 当心共享</a> <br><a href="/2020/cke4788w6000015xf8vm7eftj/" title="程序员应该知道的97件事-9 先检查你自己的代码">程序员应该知道的97件事-9 先检查你自己的代码</a> <br>]]></content>
+        <content type="html"><![CDATA[<p>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。</p><p>首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：</p><ol><li>Algorithm：每周至少做一道算法题；</li><li>Review：阅读并点评至少一篇英文技术文章；</li><li>Tip：学习至少一个技术技巧；</li><li>Share：分享一篇有观点和思考的技术文章。</li></ol><p>刚好其中一篇关于程序员修养的文章推荐了《97 Things Every Programmer Should Know》，有很多编程方面的建议，文章也都很经典，且都是英文文章，可以满足Review的内容，每周至少一篇，将该系列的文章翻译到自己的博客中，顺带提高自己的英文水平。没有商业目的，只为提升自己。</p><a id="more"></a><p>以下为我的文章链接:</p><a href="/2020/ckceme0r70008njxfdt10euqe/" title="程序员应该知道的97件事-1 三思而行">程序员应该知道的97件事-1 三思而行</a> <br><a href="/2020/ckceme0r50006njxfabeu4lg6/" title="程序员应该知道的97件事-2 应用函数式编程原则">程序员应该知道的97件事-2 应用函数式编程原则</a> <br><a href="/2020/ckcfwsxmd0000toxf8pbubn7a/" title="程序员应该知道的97件事-3 想想用户会怎么做">程序员应该知道的97件事-3 想想用户会怎么做</a> <br><a href="/2020/ckcom8une0003toxfdp0qcfqv/" title="程序员应该知道的97件事-4 自动化你的编码标准">程序员应该知道的97件事-4 自动化你的编码标准</a> <br><a href="/2020/ckcx1gc2s0000ydxfhksgh8qk/" title="程序员应该知道的97件事-5 美在简单之中">程序员应该知道的97件事-5 美在简单之中</a> <br><a href="/2020/ckczxqjo00000rbxf7obod820/" title="程序员应该知道的97件事-6 重构之前">程序员应该知道的97件事-6 重构之前</a> <br><a href="/2020/ckddwsgpo00007gxf6u1f5we1/" title="程序员应该知道的97件事-7 当心共享">程序员应该知道的97件事-7 当心共享</a> <br><a href="/2020/ckdu1wdb4000027xfawxsh0l6/" title="程序员应该知道的97件事-8 童子军规则">程序员应该知道的97件事-8 童子军规则</a> <br><a href="/2020/cke4788w6000015xf8vm7eftj/" title="程序员应该知道的97件事-9 先检查你自己的代码">程序员应该知道的97件事-9 先检查你自己的代码</a> <br><a href="/2020/ckevaqsnj00007oxf57pn8k2n/" title="程序员应该知道的97件事-10 谨慎选择工具">程序员应该知道的97件事-10 谨慎选择工具</a> <br>]]></content>
       
       
       <categories>
