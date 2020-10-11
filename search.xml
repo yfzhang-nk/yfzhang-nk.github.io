@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>初识gitbook</title>
+      <link href="/2020/ckg3usa0h0000xgxfeq1xc5oa/"/>
+      <url>/2020/ckg3usa0h0000xgxfeq1xc5oa/</url>
+      
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>背景</span></h2><p>为了在实验上深耕下去，正在阅读一本英文版的实验书籍，突然有了翻译成中文版的想法，调研了下写书工具，发现gitbook是不错的选择，可以使用markdown，还有git进行版本管理，逼格满满。</p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>安装</span></h2><p>由于gitbook基于node.js，首先需要保证你的机器上已安装好node，不属于主要内容，就不做介绍了。</p><p>然后开始安装gitbook，输入以下命令进行安装：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g gitbook-cli</span><br></pre></td></tr></table></figure><p>安装完成后，通过下列命令验证是否安装成功：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ gitbook -V</span><br><span class="line">CLI version: 2.3.2</span><br><span class="line">GitBook version: 3.0.0</span><br></pre></td></tr></table></figure><p>更多命令参看 <div><a class='link-card' title='https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md' href='https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md' target="_blank" rel="noopener"><div class='left'><i class='fas fa-link'></i></div><div class='right'><p class='text'>GitBook 安装文档</p><p class='url'>https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md</p></div></a></div></p><a id="more"></a><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>开始写书</span></h2><p>创建并进入你要写书的目录，调用下面的命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ gitbook init</span><br><span class="line">warn: no summary file in this book</span><br><span class="line">info: create README.md</span><br><span class="line">info: create SUMMARY.md</span><br><span class="line">info: initialization is finished</span><br></pre></td></tr></table></figure><p>命令输出可以看出，命令执行后创建了两个文件README.md和SUMMARY.md，其中SUMMARY.md记录的是书的章节目录，添加几个章节：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Summary</span><br><span class="line"></span><br><span class="line">* [前言](preface.md)</span><br><span class="line">* [Part I 入门主题](PartI&#x2F;preface.md)</span><br><span class="line">* [1.概述和实验动机](PartI&#x2F;1.IntroductionAndMotivation&#x2F;preface.md)</span><br></pre></td></tr></table></figure><p>同时根据SUMMARY.md列出的文件创建出来：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── PartI</span><br><span class="line">│   ├── 1.IntroductionAndMotivation</span><br><span class="line">│   │   └── preface.md</span><br><span class="line">│   └── preface.md</span><br><span class="line">├── README.md</span><br><span class="line">├── SUMMARY.md</span><br><span class="line">└── preface.md</span><br></pre></td></tr></table></figure><p>现在就可以尝试看看效果了，运行如下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ gitbook serve</span><br><span class="line">Live reload server started on port: 35729</span><br><span class="line">Press CTRL+C to quit ...</span><br><span class="line"></span><br><span class="line">info: 7 plugins are installed</span><br><span class="line">info: loading plugin &quot;livereload&quot;... OK</span><br><span class="line">info: loading plugin &quot;highlight&quot;... OK</span><br><span class="line">info: loading plugin &quot;search&quot;... OK</span><br><span class="line">info: loading plugin &quot;lunr&quot;... OK</span><br><span class="line">info: loading plugin &quot;sharing&quot;... OK</span><br><span class="line">info: loading plugin &quot;fontsettings&quot;... OK</span><br><span class="line">info: loading plugin &quot;theme-default&quot;... OK</span><br><span class="line">info: found 1 pages</span><br><span class="line">info: found 1 asset files</span><br><span class="line">info: &gt;&gt; generation finished with success in 0.5s !</span><br><span class="line"></span><br><span class="line">Starting server ...</span><br><span class="line">Serving book on http:&#x2F;&#x2F;localhost:4000</span><br></pre></td></tr></table></figure><p>使用浏览器输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，可以看到图中内容：</p><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/picture/gitbook_example.png'><p>自此gitbook可以投入使用了，可以开始写书了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 写作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gitbook </tag>
+            
+            <tag> 工具 </tag>
+            
+            <tag> tool </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>程序员应该知道的97件事-10 谨慎选择工具</title>
       <link href="/2020/ckevaqsnj00007oxf57pn8k2n/"/>
       <url>/2020/ckevaqsnj00007oxf57pn8k2n/</url>

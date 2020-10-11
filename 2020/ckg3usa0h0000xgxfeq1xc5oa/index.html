@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,9 +16,15 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：生活 - 五灯</title>
+  <title>初识gitbook - 五灯</title>
+  
+    <meta name="keywords" content="gitbook,工具,tool">
   
 
+  
+    <meta name="description" content="背景为了在实验上深耕下去，正在阅读一本英文版的实验书籍，突然有了翻译成中文版的想法，调研了下写书工具，发现gitbook是不错的选择，可以使用markdown，还有git进行版本管理，逼格满满。
+安装由于gitbook基于node.js，首先需要保证你的机器上已安装好node，不属于主要内容，就不做介绍了。
+然后...">
   
 
   <!-- feed -->
@@ -68,7 +72,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover ' style="display: none;">
+    <cover class='cover post' style="display: none;">
       <div class='cover-body'>
   <div class='a'>
     
@@ -361,10 +365,10 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">初识gitbook</div>
   <div id="pjax-enable-cover">true</div>
-  <div id="pjax-permalink"></div>
+  <div id="pjax-permalink">http://yfzhang-nk.github.io/2020/ckg3usa0h0000xgxfeq1xc5oa/</div>
   
   <div id="valine-path">none</div>
   <div id="valine-placeholder">none</div>
@@ -398,25 +402,12 @@
       
       
 
-
 <div class='l_main'>
   
-    
-      
-  <section class="post-list ">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
+
   
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -426,11 +417,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/ckceme0r8000anjxfggylgltw/">
-      博客开篇
+  <h1 class="title">
+    <a href="/2020/ckg3usa0h0000xgxfeq1xc5oa/">
+      初识gitbook
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -453,9 +444,9 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E9%9A%8F%E7%AC%94/' rel="nofollow">
+    <a href='/categories/%E5%86%99%E4%BD%9C/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>随笔</p>
+      <p>写作</p>
     </a>
   </div>
 
@@ -466,31 +457,9 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月7日</p>
+    <p>发布于：2020年10月10日</p>
   </a>
 </div>
-
-            
-          
-            
-              
-
-            
-          
-            
-              
-  <div class="new-meta-item browse valine">
-    <a class='notlink'>
-      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-      
-      <span id="/2020/ckceme0r8000anjxfggylgltw/" class="leancloud_visitors" data-flag-title="博客开篇">
-      <p>
-        <span class="leancloud-visitors-count"></span>
-      </p>
-      </span>
-    </a>
-  </div>
-
 
             
           
@@ -508,92 +477,69 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hexo博客第一篇，说说自己为什么要写博客，博客写什么东西，以及之后的计划。</p>
-      
-    </div>
-    
-      
-        <a class= "readmore" href="/2020/ckceme0r8000anjxfggylgltw/">
-          阅读全文 <i class="fas fa-chevron-right"></i>
-        </a>
-      
-    
-  </section>
-</article>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          
+          <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>背景</span></h2><p>为了在实验上深耕下去，正在阅读一本英文版的实验书籍，突然有了翻译成中文版的想法，调研了下写书工具，发现gitbook是不错的选择，可以使用markdown，还有git进行版本管理，逼格满满。</p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>安装</span></h2><p>由于gitbook基于node.js，首先需要保证你的机器上已安装好node，不属于主要内容，就不做介绍了。</p>
+<p>然后开始安装gitbook，输入以下命令进行安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g gitbook-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，通过下列命令验证是否安装成功：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ gitbook -V</span><br><span class="line">CLI version: 2.3.2</span><br><span class="line">GitBook version: 3.0.0</span><br></pre></td></tr></table></figure>
+<p>更多命令参看 <div><a class='link-card' title='https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md' href='https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md' target="_blank" rel="noopener"><div class='left'><i class='fas fa-link'></i></div><div class='right'><p class='text'>GitBook 安装文档</p><p class='url'>https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md</p></div></a></div></p>
+<a id="more"></a>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>开始写书</span></h2><p>创建并进入你要写书的目录，调用下面的命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ gitbook init</span><br><span class="line">warn: no summary file in this book</span><br><span class="line">info: create README.md</span><br><span class="line">info: create SUMMARY.md</span><br><span class="line">info: initialization is finished</span><br></pre></td></tr></table></figure>
+<p>命令输出可以看出，命令执行后创建了两个文件README.md和SUMMARY.md，其中SUMMARY.md记录的是书的章节目录，添加几个章节：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Summary</span><br><span class="line"></span><br><span class="line">* [前言](preface.md)</span><br><span class="line">* [Part I 入门主题](PartI&#x2F;preface.md)</span><br><span class="line">	* [1.概述和实验动机](PartI&#x2F;1.IntroductionAndMotivation&#x2F;preface.md)</span><br></pre></td></tr></table></figure>
+<p>同时根据SUMMARY.md列出的文件创建出来：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── PartI</span><br><span class="line">│   ├── 1.IntroductionAndMotivation</span><br><span class="line">│   │   └── preface.md</span><br><span class="line">│   └── preface.md</span><br><span class="line">├── README.md</span><br><span class="line">├── SUMMARY.md</span><br><span class="line">└── preface.md</span><br></pre></td></tr></table></figure>
+<p>现在就可以尝试看看效果了，运行如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ gitbook serve</span><br><span class="line">Live reload server started on port: 35729</span><br><span class="line">Press CTRL+C to quit ...</span><br><span class="line"></span><br><span class="line">info: 7 plugins are installed</span><br><span class="line">info: loading plugin &quot;livereload&quot;... OK</span><br><span class="line">info: loading plugin &quot;highlight&quot;... OK</span><br><span class="line">info: loading plugin &quot;search&quot;... OK</span><br><span class="line">info: loading plugin &quot;lunr&quot;... OK</span><br><span class="line">info: loading plugin &quot;sharing&quot;... OK</span><br><span class="line">info: loading plugin &quot;fontsettings&quot;... OK</span><br><span class="line">info: loading plugin &quot;theme-default&quot;... OK</span><br><span class="line">info: found 1 pages</span><br><span class="line">info: found 1 asset files</span><br><span class="line">info: &gt;&gt; generation finished with success in 0.5s !</span><br><span class="line"></span><br><span class="line">Starting server ...</span><br><span class="line">Serving book on http:&#x2F;&#x2F;localhost:4000</span><br></pre></td></tr></table></figure>
+<p>使用浏览器输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，可以看到图中内容：</p>
+<img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/picture/gitbook_example.png'>
+<p>自此gitbook可以投入使用了，可以开始写书了。</p>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
-
-
-    
-  
-</div>
-<aside class='l_side'>
-  
+          
+            <div class='article_footer'>
+              
+                
   
     
     
 
-<section class="widget blogger shadow desktop mobile">
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">五灯</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
+      <blockquote>
         
           
-            <a href="mailto:yfzhang_nk@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
           
         
           
-            <a href="https://github.com/yfzhang-nk"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckg3usa0h0000xgxfeq1xc5oa/>http://yfzhang-nk.github.io/2020/ckg3usa0h0000xgxfeq1xc5oa/</a></p>
           
         
-          
-            <a href="/382372329"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-      </div>
+      </blockquote>
     
   </div>
 </section>
@@ -603,68 +549,163 @@
   
     
     
+
+<section class="widget qrcode  desktop mobile">
   
 
-  <section class="widget category shadow desktop">
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/alipay_code.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/qrcode/wechat_code.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-11T21:17:14+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年10月11日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/gitbook/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>gitbook</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%B7%A5%E5%85%B7/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>工具</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/tool/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>tool</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png"></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADnUlEQVR42u3aQXLjMAwEQP//07v3VLlEDCAbSpo3JxRNNnOYAHr9M6LxQgAOHDhwBjhwS+Be4Xi78I/fV9e7+lyd9+659LzgwIEDBw4cOHDb4I4D4ND8U+C7L6a6f3DgwIEDBw4cuK1waUA9DcjvnjsNqp++MHDgwIEDBw4cuN8Ol36emjcdoMGBAwcOHDhw4P46XLlQWARIocCBAwcOHDhw4H4bXPeg1XlTAfVxnXxw4MCBAwcOHLghuOq4q7D5qc/xecGBAwcOHDhw4JbAdcd0wEwPOPVC4uV+wYEDBw4cOHDglsB1C4OnYKfAaSGyWiitng8cOHDgwIEDB+4pcKcbrQbPdMNTF9E+Nzhw4MCBAwcO3DK49OBpI7i6bve5tLEed/LBgQMHDhw4cOBuhjsNmscLFwuep8F3PMim88CBAwcOHDhw4JbDpYFyqjCZNpSn4OMADA4cOHDgwIED9yG4aoC9u2FchTiF784HBw4cOHDgwIHbBnd6kKlC4em6pwF2ugAbFzLBgQMHDhw4cOC+BHf6YBpoq7DdQuf0hYEDBw4cOHDgwG2Hu+tFwm7jeqoQ2n0xERw4cODAgQMHbgvc3S8IdoPu1LwuGDhw4MCBAwcO3Fa4bhBOC4rtBnHz4suBHxw4cODAgQMHbglcFSQF7B5oCqTd4AYHDhw4cODAgVsKN1WYTINqt7F8GmirwRscOHDgwIEDB+4pcHFADBvZ1YCaFj7HGtLgwIEDBw4cOHDL4NJg2g3AXbBqcI6DNjhw4MCBAwcO3DK4qSA63cie2t9YwRQcOHDgwIEDB24JXDfY3v3zqWDeDe7gwIEDBw4cOHBb4aYCaFpQTBvW3X2Wgzk4cODAgQMHDtxSuG7grG74auPdRvfUHwA4cODAgQMHDtx2uKlGb7egOQU7fpHgwIEDBw4cOHAPg6sWJqsFyhT8UwMcOHDgwIEDB24bXHfc1VhOG93lBnM1yIMDBw4cOHDgwC2Bm2pAf7qxXW1Ypxdy+Z8DOHDgwIEDBw7cl+HSguNpwbMbWKcLpNXvBQcOHDhw4MCB2w5XDoQX87rBNwWYakBfFjLBgQMHDhw4cOAeDtcNlmlBtBt0qwVUcODAgQMHDhy4vwJXBUgLrFPPX54fHDhw4MCBAwduKdxdBcW71ul+/1gABgcOHDhw4MCB+xJc2rBNC5Wn66ZgccCtBmBw4MCBAwcOHLgvwRnFQicCcODAgTPAgfvu+A/XTH3EWMNhOwAAAABJRU5ErkJggg==">
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/ckevaqsnj00007oxf57pn8k2n/'>
+                <p class='title'>程序员应该知道的97件事-10 谨慎选择工具<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>原文链接: Choose Your Tools with Carehttps://97-things-every-x-should-know.gitbooks.io/97-things-ever...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      <section id="comments">
+        <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+      </section>
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+</div>
+<aside class='l_side'>
+  
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%86%99%E4%BD%9C/" href="/categories/%E5%86%99%E4%BD%9C/"
-            id="categoriesE58699E4BD9C"
-            ><div class='name'>写作</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/"
-            id="categoriesE88BB1E69687E69687E7ABA0E7BFBBE8AF91"
-            ><div class='name'>英文文章翻译</div><div class='badge'>(11)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
-            id="categoriesE99A8FE7AC94"
-            ><div class='name'>随笔</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-text">开始写书</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/gitbook/" style="font-size: 14px; color: #999">gitbook</a> <a href="/tags/tool/" style="font-size: 14px; color: #999">tool</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" style="font-size: 24px; color: #555">程序员应该知道的97件事</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
     </div>
