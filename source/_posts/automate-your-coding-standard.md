@@ -7,7 +7,7 @@ categories:
 	- 英文文章翻译
 ---
 
-原文链接：{% link Automate Your Coding Standard https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_04/ %}
+原文链接：{% link Automate Your Coding Standard, https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_04/, https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg %}
 
 ## {% span blue, 自动化你的编码规范 %}
 
@@ -29,7 +29,7 @@ categories:
 
 最后，代码规范应该是动态的而不是静态的。随着项目的演进，项目需求会变，一开始看起来很聪明的做法，几个月后就看起来没有那么必要了。
 
-By {% link Filip van Laenen  https://github.com/filipvanlaenen %}
+By {% link Filip van Laenen,  https://github.com/filipvanlaenen %}
 
 ## {% span blue, 单词 %}
 {% pullquote [class] %}

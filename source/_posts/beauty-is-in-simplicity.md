@@ -6,7 +6,7 @@ tags:
 categories:
 	- 英文文章翻译
 ---
-原文链接：{% link Beauty Is in Simplicity https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_05/ %}
+原文链接：{% link Beauty Is in Simplicity, https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_05/,https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg %}
 
 ## {% span blue, 美在简单之中 %}
 
@@ -33,7 +33,7 @@ categories:
 
 漂亮代码的底线是简单。每个独立的部分都应该保持简单：拥有简单的职责，与系统其他部分保持简单的关联。通过干净整洁、可测试的代码，在系统的整个生命周期内保持高效的开发速度，这才是让我们的系统能够承受住时间考验的方法。美来源于简单，并因简单被人们发现。
 
-By {% link Jorn Olmheim https://www.linkedin.com/in/joelmheim/ %}
+By {% link Jorn Olmheim, https://www.linkedin.com/in/joelmheim/ %}
 
 ## {% span blue, 单词 %}
 {% pullquote [class] %}

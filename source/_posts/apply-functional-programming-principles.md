@@ -6,7 +6,7 @@ tags:
 categories:
 	- 英文文章翻译
 ---
-原文链接：{% link Apply Functional Programming Principles https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/ %}
+原文链接：{% link Apply Functional Programming Principles, https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/, https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg %}
 
 ## {% span blue, 应用函数式编程原则 %}
 函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。
@@ -27,7 +27,7 @@ categories:
 
 掌握了函数式编程范式，你将更明智的把本章内容应用到其他领域。你的对象系统与引用透明性更能产生共鸣，跟函数式对等方式的接近程度超乎你的想象。实际上，有人断言函数式编程和面向对象编程是相互映射的两端，是计算机领域里的阴阳两极。
 
-By {% link Edward Garson https://www.linkedin.com/in/egarson/ %}
+By {% link Edward Garson, https://www.linkedin.com/in/egarson/ %}
 
 
 ## {% span blue, 单词 %}

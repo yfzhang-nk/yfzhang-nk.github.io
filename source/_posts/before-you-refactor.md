@@ -6,7 +6,7 @@ tags:
 categories:
 	- 英文文章翻译
 ---
-原文链接：{% link Before You Refactor https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/ %}
+原文链接：{% link Before You Refactor, https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/, https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg %}
 
 ## {% span blue, 重构之前 %}
 
@@ -26,7 +26,7 @@ categories:
 
 * 记住人总是会犯错的。重构永远不能保证新代码更好，或者和原来一样好。我曾经看到过，也经历过不少失败的重构。人非圣贤孰能无过。
 
-By {% link Rajith Attapattu https://www.linkedin.com/in/rajith-muditha-attapattu/ %}
+By {% link Rajith Attapattu, https://www.linkedin.com/in/rajith-muditha-attapattu/ %}
 
 ## {% span blue, 单词 %}
 {% pullquote [class] %}

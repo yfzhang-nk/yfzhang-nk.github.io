@@ -6,7 +6,7 @@ tags:
 categories:
 	- 英文文章翻译
 ---
-原文链接：{% link Ask "What Would the User Do?" (You Are not the User) https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_03/ %}
+原文链接：{% link Ask "What Would the User Do?" (You Are not the User), https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_03/, https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg %}
 
 ## {% span blue, 问问“用户会怎么做” %}
 我们倾向于假设其他人和我们思考方式一样，但是他们不会。心理学家称这个现象叫做虚假同感偏差。当人们思考或者行事跟我们不一样时，我们潜意识上很容易在某种程度会给他们打上缺陷的标签。
@@ -23,7 +23,7 @@ categories:
 
 用户往往会蒙混过关。他们找到一个有效的方法他们就会坚持这么用下去，而不管这个方法多复杂。所以最好给用户提供一个真正明显的方法，而不是提供两三捷径。你还会发现用户说他们想要的，和他们真正想要的之间存在差异。令人担忧的是收集用户需求的通用方法是问他们。这也是为什么说获取用户需求最好的办法是观察他们。花一小时观察用户比猜测用户想要什么能获取更多的信息。
 
-By {% link Giles Colborne https://book.douban.com/subject/5394309/ %}
+By {% link Giles Colborne, https://book.douban.com/subject/5394309/ %}
 
 
 ## {% span blue, 单词 %}

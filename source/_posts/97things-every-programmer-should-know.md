@@ -29,3 +29,4 @@ categories:
 {% post_link the-boy-scout-rule %} <br>
 {% post_link check-your-code-first %} <br>
 {% post_link choose-your-tools-with-care%} <br>
+{% post_link code-in-the-language-of-the-domain %} <br>
