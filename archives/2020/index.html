@@ -290,7 +290,7 @@
     
         <div id="half" class='cover-wrapper  dock' style="display: ;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div id='cover-backstretch'></div>
           
           <div class='cover-body'>
   <div class='top'>
@@ -392,6 +392,58 @@
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/ckhudckf70000texff0jr4q4h/">
+        程序员应该知道的97件事-11 使用领域内的语言编码
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <p>原文链接: <div class="tag link"><a class="link-card" title="Code in the Language of the Domain" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_11/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Code in the Language of the Domain</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_11/</p></div></a></div></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>使用领域内的语言编码</span></h2><p>展示两端代码库。第一段如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (portfolioIdsByTraderId.get(trader.getId())</span><br><span class="line">	.containsKey(portfolio.getId())) &#123;...&#125;</span><br></pre></td></tr></table></figure>
+<p>你挠挠头，想只掉这段代码是做什么用的。看着好像是从一个trader对象里获取ID信息，显然是从一个map的map结构中获取一个map，然后看portfolio对象的ID是否存在于这个内部映射里。你更纳闷了，查询portfolioIdsByTraderId的定义，你会发现一下内容: </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;<span class="keyword">int</span>, Map&lt;<span class="keyword">int</span>&gt;&gt; portfolioIdsByTraderId;</span><br></pre></td></tr></table></figure>
+<p>渐渐地，你可能意识到这可能跟一个trader拥有一个特定porfolio访问权有关。当然，你可能还会找到相同代码片段-或者相似但略有不同的代码-无论什么时候，只要一个trader想访问一个特定的portfolio。</p>
+<p>另一段代码库如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (trader.canView(portfolio)) &#123;...&#125;</span><br></pre></td></tr></table></figure>
+<p>这次你不用疑惑了。你不需要知道trader是如何知道的。也许这里隐藏了很多map中包含map的结构在里面。那都是trader的逻辑，不是你的。</p>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time>2020-11-23</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/">英文文章翻译</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/ckhudckf70000texff0jr4q4h/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -654,7 +706,7 @@
   
   <div class='md'>
     
-      <p>原文链接：</p>
+      <p>原文链接：<div class="tag link"><a class="link-card" title="Before You Refactor" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Before You Refactor</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/</p></div></a></div></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>重构之前</span></h2><p>某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：</p>
 <ul>
 <li><p>重构最好的方法应该从观察已有的代码库和相关测试案例。这会帮助你了解当前代码的优点和缺点，以保证能保留已有的优点和避免错误。我们都认为我们会比现有系统做的好…直到完成，发现我们有些事比以前做的并不比以前好，甚至更糟，因为我们没有从之前的错误中吸取教训。</p>
@@ -701,7 +753,7 @@
   
   <div class='md'>
     
-      <p>原文链接：</p>
+      <p>原文链接：<div class="tag link"><a class="link-card" title="Beauty Is in Simplicity" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_05/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Beauty Is in Simplicity</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_05/</p></div></a></div></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>美在简单之中</span></h2><p>有一句格言是所有软件开发者应该知道并且牢记于心的：</p>
 <blockquote><p>风格、和谐、优雅、节奏之美取决于简单。</p>
 <footer><strong>柏拉图</strong></footer></blockquote>
@@ -749,7 +801,7 @@
   
   <div class='md'>
     
-      <p>原文链接：</p>
+      <p>原文链接：<div class="tag link"><a class="link-card" title="Automate Your Coding Standard" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_04/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Automate Your Coding Standard</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_04/</p></div></a></div></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>自动化你的编码规范</span></h2><p>你可能有过这样的经历，项目一开始时，每个人都有很多想法-我们称为新项目决议。这些决议经常会记录到文档里。关于代码的决议最终会称为项目的代码规范。在启动会议上，开发负责人会浏览文档，最好的情况，每个人都同意会尝试遵守它。然而，一旦项目开始，这些好的想法都会一个一个被抛弃。当最终交付项目时，代码看起来一团糟，没有人知道怎么变成这样的。</p>
 <p>是什么时候变糟的？大概在启动会议时，项目成员有些不太在意，其他人没有理解这点，更糟糕的，有些人根本就不同意这些规范，可能已经开始计划不服从这些规范。最后，有些人抓住了重点而且也同意，但是当项目压力过高时，他们不得不放任不管规范了。格式良好的代码并不会在客户那里获得加分，他们只是想要更多功能。而且加入代码规范不是自动化的，遵守它是一项很无聊的任务。尝试下缩进一个排版混乱的类，你就能明白自动化的好处了。</p>
     
@@ -795,7 +847,7 @@
   
   <div class='md'>
     
-      <p>原文链接：</p>
+      <p>原文链接：<div class="tag link"><a class="link-card" title="Ask What Would the User Do? (You Are not the User)" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_03/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Ask What Would the User Do? (You Are not the User)</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_03/</p></div></a></div></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>问问“用户会怎么做”</span></h2><p>我们倾向于假设其他人和我们思考方式一样，但是他们不会。心理学家称这个现象叫做虚假同感偏差。当人们思考或者行事跟我们不一样时，我们潜意识上很容易在某种程度会给他们打上缺陷的标签。</p>
 <p>这种偏见解释了程序员们为什么很难把自己放到用户的位置上，用户也不会像程序员一样想问题。首先，他们很少花时间使用电脑。他们不知道也不关心电脑如何工作。这就意味着程序员们解决问题时采用了一些习以为常的技术，用户们却不会使用。在页面接口上，用户不会识别出图示和线索，尽管这些是程序员们经常使用的。</p>
     
@@ -813,52 +865,6 @@
       
         <div>
           <a class='readmore' href='/2020/ckg65v52w0006jmxfg7m89rdj/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/ckg65v52v0005jmxfhuzs9zyt/">
-        程序员应该知道的97件事-2 应用函数式编程原则
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>原文链接：</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>应用函数式编程原则</span></h2><p>函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。</p>
-<p>掌握函数式编程可以极大地提高你在其他上下文上写代码的质量。如果你能深入理解和应用函数范式，你的设计会拥有很高的引用透明性。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-07-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/">英文文章翻译</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/ckg65v52v0005jmxfhuzs9zyt/'>
             阅读全文
           </a>
         </div>
@@ -991,7 +997,7 @@
           <li><a class="flat-box"
             title="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/"
             id="categoriesE88BB1E69687E69687E7ABA0E7BFBBE8AF91"
-            ><div class='name'>英文文章翻译</div><div class='badge'>(11)</div></a></li>
+            ><div class='name'>英文文章翻译</div><div class='badge'>(12)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
@@ -1239,6 +1245,41 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 <!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+	  function Pjax_backstretch(){
+        
+          $('#cover-backstretch').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        
+	  }
+	  loadScript("https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js",Pjax_backstretch)
+    </script>
+  
 
 
 
@@ -1810,6 +1851,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
           } else {
             pjax_fancybox();
           }
+        
+		  Pjax_backstretch()
         
         
         

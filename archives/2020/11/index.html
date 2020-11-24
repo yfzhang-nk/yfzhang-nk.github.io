@@ -5,6 +5,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -19,14 +21,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>程序员应该知道的97件事-2 应用函数式编程原则 - 五灯</title>
-  
-    <meta name="keywords" content="程序员应该知道的97件事">
+  <title>归档：2020/11 - 五灯</title>
   
 
-  
-    <meta name="description" content="原文链接：Apply Functional Programming Principleshttps://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/
-应用函...">
   
 
   <!-- feed -->
@@ -70,7 +67,7 @@
 <body>
   
 
-<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -291,7 +288,7 @@
     <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper post dock' style="display: none;">
+        <div id="half" class='cover-wrapper  dock' style="display: ;">
           
             <div id='cover-backstretch'></div>
           
@@ -366,209 +363,78 @@
         
 
 <div class='l_main'>
-  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  
-
-
-  
-  <div class="article-meta" id="top">
+	
+		
+  <section class="post-list">
     
-    
-    
-      <h1 class="title">
-        程序员应该知道的97件事-2 应用函数式编程原则
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' href="https://yfzhang-nk.github.io" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png">
-    <p>五灯</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class='new-meta-item category'>
-    <a class='notlink'>
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/">英文文章翻译</a>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年7月9日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
       
-      <div id="lc-pv" data-title="程序员应该知道的97件事-2 应用函数式编程原则" data-path="/2020/ckg65v52v0005jmxfhuzs9zyt/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
+        
           
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/ckhudckf70000texff0jr4q4h/">
+        程序员应该知道的97件事-11 使用领域内的语言编码
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <p>原文链接: <div class="tag link"><a class="link-card" title="Code in the Language of the Domain" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_11/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Code in the Language of the Domain</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_11/</p></div></a></div></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>使用领域内的语言编码</span></h2><p>展示两端代码库。第一段如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (portfolioIdsByTraderId.get(trader.getId())</span><br><span class="line">	.containsKey(portfolio.getId())) &#123;...&#125;</span><br></pre></td></tr></table></figure>
+<p>你挠挠头，想只掉这段代码是做什么用的。看着好像是从一个trader对象里获取ID信息，显然是从一个map的map结构中获取一个map，然后看portfolio对象的ID是否存在于这个内部映射里。你更纳闷了，查询portfolioIdsByTraderId的定义，你会发现一下内容: </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;<span class="keyword">int</span>, Map&lt;<span class="keyword">int</span>&gt;&gt; portfolioIdsByTraderId;</span><br></pre></td></tr></table></figure>
+<p>渐渐地，你可能意识到这可能跟一个trader拥有一个特定porfolio访问权有关。当然，你可能还会找到相同代码片段-或者相似但略有不同的代码-无论什么时候，只要一个trader想访问一个特定的portfolio。</p>
+<p>另一段代码库如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (trader.canView(portfolio)) &#123;...&#125;</span><br></pre></td></tr></table></figure>
+<p>这次你不用疑惑了。你不需要知道trader是如何知道的。也许这里隐藏了很多map中包含map的结构在里面。那都是trader的逻辑，不是你的。</p>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time>2020-11-23</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/">英文文章翻译</a>
         
       </div>
-    
-  </div>
-
-
-  
-  <p>原文链接：<div class="tag link"><a class="link-card" title="Apply Functional Programming Principles" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Apply Functional Programming Principles</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_02/</p></div></a></div></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>应用函数式编程原则</span></h2><p>函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给你推荐函数式编程的原因。</p>
-<p>掌握函数式编程可以极大地提高你在其他上下文上写代码的质量。如果你能深入理解和应用函数范式，你的设计会拥有很高的引用透明性。</p>
-<a id="more"></a>
-
-<p>引用透明性是一个很好的特性：表示一个函数针对相同的输入，始终产生相同的结果，而不管是在什么地方和什么时候调用。也就是说，函数的求值很少依赖（理想中是完全不依赖）可变状态的副作用。</p>
-<p>命令式代码的主要缺陷来自可变的变量。读到这里的每个程序员都有这样的经历：在某个特殊情况下某些值不是期望的。可见性语义可以帮助我们减少这类问题，至少可以缩小范围，但真正的罪魁祸首是程序设计中滥用了变量。</p>
-<p>在这个方面，我们确实没有从中获取太多帮助。面向对象默认使用这样的设计，因为他们经常展示由多个相关且长生命周期的对象图表组成的示例，美其名曰赋值方法，这样做其实是很危险的。但是，通过巧妙的测试驱动开发的设计，特别是确保“模拟职责，而不是对象”，可以消除不必要的可变性。</p>
-<p>最终结果应该是这样一个设计：创建众多小函数，每个函数拥有自己的职责分配，按照输入的参数输出结果，而不是引用可变的成员变量。这样做产生的缺陷少，此外它们还容易调试，因为很容易定位该设计引入的标志值，比通过特定的上下文推断错误的赋值要好。这将大幅度增加引用透明性，想让这种意识深入骨髓，没有比学习函数式编程更好的办法了，因为这个在函数式编程中是作为标准出现的。</p>
-<p>当然，这个方法不是在所有场景下都是最优的。比如，在面向对象系统中，这种风格在领域模型开发（例：打破商业规则的复杂度）上比用户界面开发更能产出更好的结果</p>
-<p>掌握了函数式编程范式，你将更明智的把本章内容应用到其他领域。你的对象系统与引用透明性更能产生共鸣，跟函数式对等方式的接近程度超乎你的想象。实际上，有人断言函数式编程和面向对象编程是相互映射的两端，是计算机领域里的阴阳两极。</p>
-<p>By <div class="tag link"><a class="link-card" title="Edward Garson" href="https://www.linkedin.com/in/egarson/" target="_blank" rel="noopener"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Edward Garson</p><p class="url">https://www.linkedin.com/in/egarson/</p></div></a></div></p>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>be attributed to</span>  归因于…<br><span class='p green'>culprit</span>  n. 犯人，罪犯<br><span class='p green'>act on</span>  对…起作用；按照…行事<br><span class='p green'>rogue value</span> 维基百科上显示为sentinel value的别名，表示标记值</p>
-</blockquote>
-
-<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p blue'>个人观点</span></h2><p>函数式编程的特性我还没有深入的理解，此时不置评论。不过我相信，函数式编程有很好的特性，但软件工程上没有银弹，任何的设计都有适用的范围，使用前先深入了解它。</p>
-
-  
-  
-    
-    <div class='footer'>
       
-      
-      
-        <div class='copyright'>
-          <blockquote>
-            
-              
-                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-              
-            
-              
-                <p>本文永久链接是：<a href=http://yfzhang-nk.github.io/2020/ckg65v52v0005jmxfhuzs9zyt/>http://yfzhang-nk.github.io/2020/ckg65v52v0005jmxfhuzs9zyt/</a></p>
-              
-            
-          </blockquote>
+        <div>
+          <a class='readmore' href='/2020/ckhudckf70000texff0jr4q4h/'>
+            阅读全文
+          </a>
         </div>
-      
       
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-11-24T11:30:50+08:00">
-  <a class='notlink'>
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年11月24日</p>
-  </a>
 </div>
 
-        
-      
-        
-          
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>程序员应该知道的97件事</p></a></div>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        
-        <div class='hoverbox'>
-          <a class='share'><img src="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets/logo/128/wechat.png" srcset="data:image/png;base64,666"></a>
-          <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADoklEQVR42u3aS1LDQAwFwNz/0rCnyjX62VFCaxdijz09LB4Srx9VqhcCcODAgVPgwC2BexXrcuE/319df7Ve9v7TdafnZvcLDhw4cODAgQO3DS4cAJMQ0edED+gKrHp/dr/gwIEDBw4cOHBb4Y4B8HD99AajwbsbsMPXgwMHDhw4cODAfTlcetDbbGBOB2hw4MCBAwcOHLj/Avd08O1CgQMHDhw4cODAfRtcN6hmNzwVUKMHtGaSDw4cOHDgwIEDNwSXrW4gfvfn8n7BgQMHDhw4cOCWwHXr6UZlNRCP7RccOHDgwIEDB24JXLcxmG0EVg/itF42oFf3Bw4cOHDgwIEDtwUuO3CeHmRPHcgU6HE9cODAgQMHDhy4ZXDV4Bi9Pht8o+tkG5rRX4TwQBocOHDgwIEDB+7NcNUNVyGyQfrpA7tcHxw4cODAgQMHbgncq1ndxmT3+vAguTmwBgcOHDhw4MCB2wZXbuglr4s2IrMQ0SDdvR4cOHDgwIEDB24b3NQDqwPf7HtMBeXsvsCBAwcOHDhw4LbBVTc21TiswlcDfDs4gwMHDhw4cODALYGrNiSnKwvSfa/yLww4cODAgQMHDtxyuOpAObvhbuO0GqzHB9LgwIEDBw4cOHAPw0UDZRdyqsGYDeZTwRocOHDgwIEDB+7T4H6CVd1o9gCr7zc24AYHDhw4cODAgVsGNxVc7xokdw9kakAODhw4cODAgQO3Da4dDJMv3A2o1cZndhAPDhw4cODAgQO3FW5q8JsdME/9w185yFaDNjhw4MCBAwcO3BK4qYFut5E4FcS7jVRw4MCBAwcOHLhPg8sG1G4Qfjp4Z4M5OHDgwIEDBw7cdrhqw7EKEb0vGnyzDcvqPsGBAwcOHDhw4LbDZYNndSPVn1cDcvYgLvcJDhw4cODAgQO3FO7uAJz9PB1k288DBw4cOHDgwIFbDlcNlFPBsxvQuwNtcODAgQMHDhy47XDdyjYmo+tEAaYH1scADQ4cOHDgwIEDtwSuGwjvamhOD6yrB3L8ywEcOHDgwIEDB+7NcN2gOt2Q7DZIswcSbryCAwcOHDhw4MAthUsHwsP91YZhF2C6wIEDBw4cOHDgvhWuOjC+O2BHDzT8GRw4cODAgQMH7svgqi8cBczW1P3gwIEDBw4cOHCfAnd3Q7G7TnVgXl0XHDhw4MCBAwduO1x5QFv8PntfNrBOD87BgQMHDhw4cOC2walkgxMBOHDgwClw4N5bv93YACakbol3AAAAAElFTkSuQmCC">
           </div>
-        </div>
-      
-    
-  </div>
-</div>
-
-
-
         
       
-    </div>
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/2020/ckg65v52w0006jmxfg7m89rdj/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>程序员应该知道的97件事-3 想想用户会怎么做</p>
-          <p class='content'>原文链接：Ask What Would the User Do? (You Are not the User)https://97-things-every-x-should-know.gitb...</p>
-        </a>
-      
-      
-        <a class='next' href='/2020/ckg65v52l0000jmxfg9jj8h0e/'>
-          <p class='title'>每个程序员应该知道的97件事<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>极客时间上购买了左耳听风的专栏，就是陈皓（左耳朵耗子）一个关于技术、成长、管理的文章合集，内容确实是丰富。
-首先作者提供了一个程序员练级的方法，叫做ARTS，就是每周完成一个ARTS：
-
-Alg...</p>
-        </a>
-      
-    </div>
-  
-</article>
-
-
-  
-
-  <article class="post white-box reveal shadow" id="comments">
-    <p ct><i class='fas fa-comments'></i> 评论</p>
     
-    <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-  </article>
-
+  </section>
+  
+    
+  
 
 
-
-
-
+	
 </div>
 <aside class='l_side'>
   
@@ -576,28 +442,136 @@ Alg...</p>
     
     
 
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/yfzhang-nk/cdn-assets@master/avatar/avatar.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">五灯</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:nankaihunter@gmail.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/yfzhang-nk"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
 
+  
 
-  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+  
+    
+    
+  
+
+  <section class="widget category shadow desktop">
     
   <header>
     
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text">应用函数式编程原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-text">单词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-text">个人观点</span></a></li></ol>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%86%99%E4%BD%9C/" href="/categories/%E5%86%99%E4%BD%9C/"
+            id="categoriesE58699E4BD9C"
+            ><div class='name'>写作</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/" href="/categories/%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91/"
+            id="categoriesE88BB1E69687E69687E7ABA0E7BFBBE8AF91"
+            ><div class='name'>英文文章翻译</div><div class='badge'>(12)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
+            id="categoriesE99A8FE7AC94"
+            ><div class='name'>随笔</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
     </div>
   </section>
 
 
   
 
+  
+    
+    
+  
+
+  <section class="widget tagcloud shadow desktop mobile">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/gitbook/" style="font-size: 14px; color: #999">gitbook</a> <a href="/tags/tool/" style="font-size: 14px; color: #999">tool</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8497%E4%BB%B6%E4%BA%8B/" style="font-size: 24px; color: #555">程序员应该知道的97件事</a>
+    </div>
+  </section>
+
+
+  
+
+  
+
 
 </aside>
-
 
 
         
@@ -607,14 +581,14 @@ Alg...</p>
 
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="程序员应该知道的97件事-2 应用函数式编程原则";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.add("show");
+  l_header.classList.remove("show");
   
 </script>
 

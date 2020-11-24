@@ -298,7 +298,7 @@ S...">
     
         <div id="full" class='cover-wrapper post dock' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div id='cover-backstretch'></div>
           
           <div class='cover-body'>
   <div class='top'>
@@ -462,6 +462,7 @@ S...">
 <a href="/2020/ckg65v5400018jmxf6jls01pr/" title="程序员应该知道的97件事-8 童子军规则">程序员应该知道的97件事-8 童子军规则</a> <br>
 <a href="/2020/ckg65v53y0014jmxfaxh0b2jy/" title="程序员应该知道的97件事-9 先检查你自己的代码">程序员应该知道的97件事-9 先检查你自己的代码</a> <br>
 <a href="/2020/ckg65v53z0016jmxf9kzrewmp/" title="程序员应该知道的97件事-10 谨慎选择工具">程序员应该知道的97件事-10 谨慎选择工具</a> <br>
+ <br>
 
   
   
@@ -496,10 +497,10 @@ S...">
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-09T19:27:06+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-11-24T11:28:46+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月9日</p>
+    <p>更新于：2020年11月24日</p>
   </a>
 </div>
 
@@ -547,18 +548,13 @@ S...">
       
         <a class='prev' href='/2020/ckg65v52v0005jmxfhuzs9zyt/'>
           <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>程序员应该知道的97件事-2 应用函数式编程原则</p>
-          <p class='content'>原文链接：
-应用函数式编程原则函数式编程(FP)最近又受到了主流编程社区的喜爱，部分原因是对于来自多核的挑战，函数范式的特性占有有利的位置。尽管这个原因的确是函数式编程很好的一个应用，但不是我给...</p>
+          <p class='content'>原文链接：Apply Functional Programming Principleshttps://97-things-every-x-should-know.gitbooks.io/97-...</p>
         </a>
       
       
         <a class='next' href='/2020/ckg65v52r0001jmxf9jov4om8/'>
           <p class='title'>程序员应该知道的97件事-1 三思而行<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>原文链接：
-三思而行不管你做什么，都应该三思而行且考虑后果
-阿农
-
-在一次迭代的开始，不管日程表规划的多么舒服，有些时候都无法避免的面临压力。当面对“好好做”还是“快快做”的选择时，我们经常倾向...</p>
+          <p class='content'>原文链接：Act with Prudencehttps://97-things-every-x-should-know.gitbooks.io/97-things-every-programme...</p>
         </a>
       
     </div>
@@ -805,6 +801,41 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 <!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+	  function Pjax_backstretch(){
+        
+          $('#cover-backstretch').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        
+	  }
+	  loadScript("https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js",Pjax_backstretch)
+    </script>
+  
 
 
 
@@ -1376,6 +1407,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
           } else {
             pjax_fancybox();
           }
+        
+		  Pjax_backstretch()
         
         
         

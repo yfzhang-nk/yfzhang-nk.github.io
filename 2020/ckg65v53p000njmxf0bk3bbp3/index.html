@@ -25,10 +25,8 @@
   
 
   
-    <meta name="description" content="原文链接：
-重构之前某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：
-
-重构最好的方法应该从观察已有的代码库和相关测试案例。这会帮助你了解当前代码的优点和缺点，以保证能保留已有的优点和避免错误。我们都认为我们会比现有系统做的好…直到完成，发现我们有...">
+    <meta name="description" content="原文链接：Before You Refactorhttps://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/
+重构之前某些时刻每个程序员需要重构已有的代码。...">
   
 
   <!-- feed -->
@@ -295,7 +293,7 @@
     
         <div id="full" class='cover-wrapper post dock' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div id='cover-backstretch'></div>
           
           <div class='cover-body'>
   <div class='top'>
@@ -437,7 +435,7 @@
 
 
   
-  <p>原文链接：</p>
+  <p>原文链接：<div class="tag link"><a class="link-card" title="Before You Refactor" href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/" target="_blank" rel="noopener"><div class="left"><img src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" class="lazyload" data-srcset="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Before You Refactor</p><p class="url">https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_06/</p></div></a></div></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><span class='p blue'>重构之前</span></h2><p>某些时刻每个程序员需要重构已有的代码。但是在做重构之前请想清楚一下几点，这样会帮你和其他人省很多时间（或者痛苦）：</p>
 <ul>
 <li><p>重构最好的方法应该从观察已有的代码库和相关测试案例。这会帮助你了解当前代码的优点和缺点，以保证能保留已有的优点和避免错误。我们都认为我们会比现有系统做的好…直到完成，发现我们有些事比以前做的并不比以前好，甚至更糟，因为我们没有从之前的错误中吸取教训。</p>
@@ -455,7 +453,7 @@
 <li><p>记住人总是会犯错的。重构永远不能保证新代码更好，或者和原来一样好。我曾经看到过，也经历过不少失败的重构。人非圣贤孰能无过。</p>
 </li>
 </ul>
-<p>By </p>
+<p>By <div class="tag link"><a class="link-card" title="Rajith Attapattu" href="https://www.linkedin.com/in/rajith-muditha-attapattu/" target="_blank" rel="noopener"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"/></div><div class="right"><p class="text">Rajith Attapattu</p><p class="url">https://www.linkedin.com/in/rajith-muditha-attapattu/</p></div></a></div></p>
 <h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p blue'>单词</span></h2><blockquote class="pullquote [class]"><p><span class='p green'>take stock of</span> 观察、估量<br><span class='p green'>temptation</span> n. 引诱；诱惑物<br><span class='p green'>take … into account</span> 考虑；重视；体谅<br><span class='p green'>gauge</span> v. 测量；估计</p>
 </blockquote>
 
@@ -493,10 +491,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-24T16:00:39+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-11-24T11:32:51+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年7月24日</p>
+    <p>更新于：2020年11月24日</p>
   </a>
 </div>
 
@@ -550,14 +548,7 @@
       
         <a class='next' href='/2020/ckg65v53t000tjmxffnub04f1/'>
           <p class='title'>程序员应该知道的97件事-5 美在简单之中<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>原文链接：
-美在简单之中有一句格言是所有软件开发者应该知道并且牢记于心的：
-风格、和谐、优雅、节奏之美取决于简单。
-柏拉图
-一言以蔽之，这句话概括出了软件开发者渴求的价值所在。
-
-
-对于代码，我...</p>
+          <p class='content'>原文链接：Beauty Is in Simplicityhttps://97-things-every-x-should-know.gitbooks.io/97-things-every-pro...</p>
         </a>
       
     </div>
@@ -818,6 +809,41 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 <!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+	  function Pjax_backstretch(){
+        
+          $('#cover-backstretch').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        
+	  }
+	  loadScript("https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js",Pjax_backstretch)
+    </script>
+  
 
 
 
@@ -1389,6 +1415,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
           } else {
             pjax_fancybox();
           }
+        
+		  Pjax_backstretch()
         
         
         
